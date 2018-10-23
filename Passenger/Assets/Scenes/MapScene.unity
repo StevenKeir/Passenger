@@ -101,7 +101,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.5
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: dc2227b539196be4d9561393c579f5b5, type: 2}
 --- !u!1 &217171675
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,11 +305,38 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
   m_IsPrefabAsset: 0
+--- !u!1 &374574370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 893de0a9332b11248960e237d731b9e6,
+    type: 3}
+  m_PrefabInternal: {fileID: 374574369}
+--- !u!64 &374574371
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374574370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
 --- !u!1 &541196168
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +427,7 @@ GameObject:
   - component: {fileID: 844694393}
   - component: {fileID: 844694392}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -586,7 +613,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221217856}
   m_LocalRotation: {x: -0.12005593, y: -0.4783085, z: -0.035997096, w: 0.8692018}
-  m_LocalPosition: {x: 30.474, y: -13.7, z: -19.053}
+  m_LocalPosition: {x: 27.86, y: -8.93, z: -12.13}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
