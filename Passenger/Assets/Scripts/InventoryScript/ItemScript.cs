@@ -4,24 +4,37 @@ using UnityEngine;
 
 public class ItemScript : MonoBehaviour {
 
-    [Header("Inventory Script")]
-    public Inventory inventoryScript;
+    //[Header("Inventory Script")]
+    
+    private StatsHandler statHandler;
+    public enum Items { Gun, DuctTape, Laptop, CigarBox, Crystal, OxygenKit }
+    public Items myItem;
+    string itemString;
 
-    public void Awake()
+
+    public void Start()
     {
-        if (inventoryScript == null)
-        {
-            inventoryScript = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
-        }
+        itemString = myItem.ToString();
+        statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
     }
 
-    void Update()
+    void OnMouseOver()
     {
         if (Input.GetMouseButtonDown(0))
         {
             print("interacted");
-            inventoryScript.Interact();
+            statHandler.AddItem(itemString, true);
+            Interact();
         }
+    }
+
+    public void Interact()
+    {
+        print("interacted");
+
+
+
+
     }
 
 }

@@ -31,15 +31,20 @@ public class StatsHandler : MonoBehaviour {
     public float calmLevel;
 
     //items
-    public enum Items { Gun, DuctTape, Laptop, CigarBox, Crystal, OxygenKit }
-    public Items[] items;
-    public bool wearingOxygenKit;
-    public bool outside;
-    public bool hasGun;
-    public bool hasDuctape;
-    public bool hasLaptop;
-    public bool hasCigarBox;
-    public bool hasCrystal;
+    [SerializeField]
+    bool wearingOxygenKit;
+    [SerializeField]
+    bool outside;
+    [SerializeField]
+    bool hasGun;
+    [SerializeField]
+    bool hasDuctape;
+    [SerializeField]
+    bool hasLaptop;
+    [SerializeField]
+    bool hasCigarBox;
+    [SerializeField]
+    bool hasCrystal;
 
     public void AffectCalmLevel(int effect) {
         calmLevel += effect;
@@ -50,34 +55,34 @@ public class StatsHandler : MonoBehaviour {
         else outside = false;
     }
 
-    public void AddItem(Items item, bool add) {
+    public void AddItem(string item, bool add) {
         switch (item) {
-            case Items.Gun:
+            case "Gun":
                 if (add) hasGun = true;
                 else hasGun = false;
                 break;
 
-            case Items.DuctTape:
+            case "DuctTape":
                 if (add) hasDuctape = true;
                 else hasDuctape = false;
                 break;
 
-            case Items.Laptop:
+            case "Laptop":
                 if (add) hasLaptop = true;
                 else hasLaptop = false;
                 break;
 
-            case Items.CigarBox:
+            case "CigarBox":
                 if (add) hasCigarBox = true;
                 else hasCigarBox = false;
                 break;
 
-            case Items.Crystal:
+            case "Crystal":
                 if (add) hasCrystal = true;
                 else hasCrystal = false;
                 break;
 
-            case Items.OxygenKit:
+            case "OxygenKit":
                 if (add) wearingOxygenKit = true;
                 else wearingOxygenKit = false;
                 break;
