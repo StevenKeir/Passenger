@@ -8,14 +8,14 @@ public class Inventory : MonoBehaviour {
     {
         if ( Input.GetMouseButtonDown(0))
         {
-            print("interacted");
+            
             Interact();
         }
     }
 
-    void Interact()
+    public void Interact()
     {
-
+            print("interacted");
     }
 
 }
