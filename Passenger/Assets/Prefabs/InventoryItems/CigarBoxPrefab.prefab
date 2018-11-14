@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1220022087039148}
+  m_RootGameObject: {fileID: 1034994617996968}
   m_IsPrefabAsset: 1
---- !u!1 &1220022087039148
+--- !u!1 &1034994617996968
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4486165914504198}
-  - component: {fileID: 33998244248885826}
-  - component: {fileID: 23047893711443840}
-  - component: {fileID: 64010738322484024}
-  - component: {fileID: 114814673058051782}
+  - component: {fileID: 4996766469725334}
+  - component: {fileID: 33113637650198748}
+  - component: {fileID: 23132118783257278}
+  - component: {fileID: 64424771467062486}
+  - component: {fileID: 114314918786559680}
   m_Layer: 0
-  m_Name: CrystalPrefab
+  m_Name: CigarBoxPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4486165914504198
+--- !u!4 &4996766469725334
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220022087039148}
-  m_LocalRotation: {x: 0.51930606, y: -0.46794283, z: -0.15792072, w: 0.69743234}
-  m_LocalPosition: {x: 1.64, y: 0.238114, z: 2.06}
-  m_LocalScale: {x: 47.463623, y: 47.46362, z: 47.463634}
+  m_GameObject: {fileID: 1034994617996968}
+  m_LocalRotation: {x: -0, y: -0.6092602, z: -0, w: 0.79297036}
+  m_LocalPosition: {x: 6.8474765, y: -1.0118861, z: 5.7503247}
+  m_LocalScale: {x: 82.39075, y: 82.390755, z: 82.39075}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 35.209003, y: -88.408005, z: -59.818005}
---- !u!23 &23047893711443840
+  m_LocalEulerAnglesHint: {x: 0, y: -75.07201, z: 0}
+--- !u!23 &23132118783257278
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220022087039148}
+  m_GameObject: {fileID: 1034994617996968}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: fcc0e54306d8ad44283d77623939dfb5, type: 2}
+  - {fileID: 2100000, guid: afaac149c351e8d4785cee4ef9d54f37, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33998244248885826
+--- !u!33 &33113637650198748
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220022087039148}
-  m_Mesh: {fileID: 4300000, guid: 3f652995181f66d46adff75a41072204, type: 3}
---- !u!64 &64010738322484024
+  m_GameObject: {fileID: 1034994617996968}
+  m_Mesh: {fileID: 4300000, guid: 7766b668e7b478f49b288b7bc675066f, type: 3}
+--- !u!64 &64424771467062486
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220022087039148}
+  m_GameObject: {fileID: 1034994617996968}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -98,16 +98,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 3f652995181f66d46adff75a41072204, type: 3}
---- !u!114 &114814673058051782
+  m_Mesh: {fileID: 4300000, guid: 7766b668e7b478f49b288b7bc675066f, type: 3}
+--- !u!114 &114314918786559680
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1220022087039148}
+  m_GameObject: {fileID: 1034994617996968}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 176f32c624341d8469c858ebcb66eb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myItem: 4
+  myItem: 3

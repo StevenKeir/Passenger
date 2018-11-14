@@ -6,7 +6,7 @@ public class ItemScript : MonoBehaviour {
 
     //[Header("Inventory Script")]
     
-    private StatsHandler statHandler;
+    public StatsHandler statHandler;
     public enum Items { Gun, DuctTape, Laptop, CigarBox, Crystal, OxygenKit }
     public Items myItem;
     string itemString;
@@ -15,7 +15,15 @@ public class ItemScript : MonoBehaviour {
     public void Start()
     {
         itemString = myItem.ToString();
-        statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+        //statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+    }
+
+    public void Update()
+    {
+        if(statHandler == null)
+        {
+            statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+        }
     }
 
     void OnMouseOver()
