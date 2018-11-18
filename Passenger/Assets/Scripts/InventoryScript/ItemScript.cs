@@ -10,11 +10,15 @@ public class ItemScript : MonoBehaviour {
     public enum Items { Gun, DuctTape, Laptop, CigarBox, Crystal, OxygenKit }
     public Items myItem;
     string itemString;
+    public InventoryItem inventoryItem;
+    public Inventory invScript;
 
 
     public void Start()
     {
         itemString = myItem.ToString();
+
+        
         //statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
     }
 
