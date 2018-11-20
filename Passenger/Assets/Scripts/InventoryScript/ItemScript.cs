@@ -12,6 +12,7 @@ public class ItemScript : MonoBehaviour {
     string itemString;
     public InventoryItem inventoryItem;
     public Inventory invScript;
+   
 
 
     public void Start()
@@ -37,15 +38,14 @@ public class ItemScript : MonoBehaviour {
             print("interacted");
             statHandler.AddItem(itemString, true);
             Interact();
+            
         }
     }
 
     public void Interact()
     {
         print("interacted");
-
-
-
+        
 
     }
 

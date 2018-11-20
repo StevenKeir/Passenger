@@ -31,20 +31,20 @@ public class StatsHandler : MonoBehaviour {
     public float calmLevel;
 
     //items
-    [SerializeField]
-    bool wearingOxygenKit;
-    [SerializeField]
-    bool outside;
-    [SerializeField]
-    bool hasGun;
-    [SerializeField]
-    bool hasDuctape;
-    [SerializeField]
-    bool hasLaptop;
-    [SerializeField]
-    bool hasCigarBox;
-    [SerializeField]
-    bool hasCrystal;
+    //[SerializeField]
+    public bool wearingOxygenKit;
+    //[SerializeField]
+    public bool outside;
+    //[SerializeField]
+    public bool hasGun;
+    //[SerializeField]
+    public bool hasDuctape;
+    //[SerializeField]
+    public bool hasLaptop;
+    //[SerializeField]
+    public bool hasCigarBox;
+    //[SerializeField]
+    public bool hasCrystal;
 
     public void AffectCalmLevel(int effect) {
         calmLevel += effect;

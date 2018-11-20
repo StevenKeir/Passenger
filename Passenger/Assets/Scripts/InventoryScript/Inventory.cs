@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
     [Header("Iventory Items")]
-    [SerializeField] List<InventoryItem> items;
+    public List<InventoryItem> items;
     [SerializeField] Transform itemParent;
     [SerializeField] ItemSlot[] itemslots;
     [Header("Items to add to inventory")]
     [SerializeField] InventoryItem[] allItemsToAdd = new InventoryItem[5];
     public StatsHandler statHandler;
+    public bool gun;
+    public bool laptop;
+    public bool crystal;
+    public bool ductape;
+    public bool cigarbox;
 
-
-    private void OnValidate()
+    private void Update()
     {
         if(itemParent != null)
         {
@@ -21,12 +25,13 @@ public class Inventory : MonoBehaviour {
         RefreshUI();
     }
 
-    public void Update()
+    public void LateUpdate()
     {
         if (statHandler == null)
         {
             statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
         }
+        Items();
     }
 
     private void RefreshUI()
@@ -45,8 +50,30 @@ public class Inventory : MonoBehaviour {
     }
     public void Items()
     {
- 
-
+        if (statHandler.hasGun == true && gun == false)
+        {
+            items.Add(allItemsToAdd[3]);
+            gun = true;
+        }
+        if (statHandler.hasCrystal == true && crystal == false)
+        {
+            items.Add(allItemsToAdd[1]);
+            crystal = true;
+        }
+        if (statHandler.hasLaptop == true && laptop == false)
+        {
+            items.Add(allItemsToAdd[4]);
+            laptop = true;
+        }
+        if (statHandler.hasCigarBox == true && cigarbox == false)
+        {
+            items.Add(allItemsToAdd[0]);
+            cigarbox = true;
+        }
+        if (statHandler.hasDuctape == true && ductape == false)
+        {
+            items.Add(allItemsToAdd[2]);
+            ductape = true;
+        }
     }
-
 }
