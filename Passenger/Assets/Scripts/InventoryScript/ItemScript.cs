@@ -13,15 +13,24 @@ public class ItemScript : MonoBehaviour {
     string itemString;
     public InventoryItem inventoryItem;
     public Inventory invScript;
-    public GameObject Oxygenkit;   
+    public GameObject Oxygenkit;
 
+    private void Awake()
+    {
+        if (Oxygenkit == null)
+        {
+            Oxygenkit = GameObject.FindGameObjectWithTag("OxygenKit");
+        }
+        if (invScript == null)
+        {
+            invScript = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+        }
+    }
 
     public void Start()
     {
         itemString = myItem.ToString();
-
-        
-        //statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+        Oxygenkit.SetActive(false);         //Sets to false so the player can pickup later in the game.
     }
 
     public void Update()
@@ -36,7 +45,7 @@ public class ItemScript : MonoBehaviour {
     {
         if (Input.GetMouseButtonDown(0))
         {
-            print("interacted");
+            //print("interacted");
             statHandler.AddItem(itemString, true);
             Interact();
             if(myItem == Items.OxygenKit)
@@ -50,7 +59,7 @@ public class ItemScript : MonoBehaviour {
 
     public void Interact()
     {
-        print("interacted");
+       // print("interacted");
         
 
     }

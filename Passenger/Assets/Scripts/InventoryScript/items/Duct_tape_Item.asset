@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd1244b7d3f87aa4fa069d5763c55705, type: 3}
-  m_Name: Ductape_Item
+  m_Name: Duct_tape_Item
   m_EditorClassIdentifier: 
-  objectName: Item
-  icon: {fileID: 0}
+  objectName: Duct tape
+  icon: {fileID: 21300000, guid: db40c4a48cb6a77418f3e57fba1def47, type: 3}
