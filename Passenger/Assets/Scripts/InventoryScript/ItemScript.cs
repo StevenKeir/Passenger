@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemScript : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class ItemScript : MonoBehaviour {
     string itemString;
     public InventoryItem inventoryItem;
     public Inventory invScript;
-   
+    public GameObject Oxygenkit;   
 
 
     public void Start()
@@ -38,7 +39,12 @@ public class ItemScript : MonoBehaviour {
             print("interacted");
             statHandler.AddItem(itemString, true);
             Interact();
-            
+            if(myItem == Items.OxygenKit)
+            {
+                OxygenUI();
+            }
+
+            Destroy(this.gameObject);
         }
     }
 
@@ -47,6 +53,11 @@ public class ItemScript : MonoBehaviour {
         print("interacted");
         
 
+    }
+
+    void OxygenUI()
+    {
+        Oxygenkit.SetActive(true);        
     }
 
 }

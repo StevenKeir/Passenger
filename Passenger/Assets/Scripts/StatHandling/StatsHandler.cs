@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class StatsHandler : MonoBehaviour {
+public class StatsHandler : MonoBehaviour
+{
     //use this bool to detect if values have been saved
     bool hasSaved;
     bool isStarting;
@@ -13,21 +14,31 @@ public class StatsHandler : MonoBehaviour {
     [HideInInspector]
     public float timeMultiplier;
 
-    void Awake() {//this runs at the start of each scene ( I think )
+    void Awake()
+    {//this runs at the start of each scene ( I think )
         DontDestroyOnLoad(this.gameObject);
-        if (!isStarting) {
+        OxygenDealing();
+    }
+
+    void OxygenDealing()
+    {
+        if (!isStarting)
+        {
             hasOxygen = false;
         }
-        if (isStarting) {
+        if (isStarting)
+        {
             origBusOxygen = busOxygen;
             origOxygen = oxygen;
             origCalmLevel = calmLevel;
-            if (hasSaved) {
+            if (hasSaved)
+            {
                 GameObject.FindGameObjectWithTag("Player").transform.position = characterPosition;
                 //move the camera so it's also in the right position (Camera.main.transform.position =???)
             }
 
-            else {
+            else
+            {
                 wearingOxygenKit = false;
                 outside = false;
                 hasGun = false;
@@ -37,18 +48,24 @@ public class StatsHandler : MonoBehaviour {
                 hasCrystal = false;
             }
             isStarting = false;
-            if (!hasOxygen) {
-                hasOxygen = true;
-                //60 * 180 = 2 hours;
-                busOxygen = 60f * myBusMinutesMult;
-                //calm level starts at negative so it affects oxygen the same way
-                calmLevel = -60f;
-                //maxOxygen is the kit's maximum capacity. 60f = 60 seconds, mult = how many minutes.
-                maxOxygen = 60f * myMinutesMult;
-                //the oxygen kit is full at the start, since it's inside the bus
-                oxygen = maxOxygen;
+            if (!hasOxygen)
+            {
+                OxygenStart();
             }
         }
+    }
+
+    void OxygenStart()
+    {
+        hasOxygen = true;
+        //60 * 180 = 2 hours;
+        busOxygen = 60f * myBusMinutesMult;
+        //calm level starts at negative so it affects oxygen the same way
+        calmLevel = -60f;
+        //maxOxygen is the kit's maximum capacity. 60f = 60 seconds, mult = how many minutes.
+        maxOxygen = 60f * myMinutesMult;
+        //the oxygen kit is full at the start, since it's inside the bus
+        oxygen = maxOxygen;
     }
     //characterStats:
     Vector3 characterPosition;
@@ -57,7 +74,7 @@ public class StatsHandler : MonoBehaviour {
     //oxygen
     public float busOxygen;
     float origBusOxygen;
-    float maxOxygen;
+    public float maxOxygen;
     public float oxygen;
     float origOxygen;
     public float calmLevel;
@@ -72,70 +89,89 @@ public class StatsHandler : MonoBehaviour {
     public bool hasCigarBox;
     public bool hasCrystal;
 
-    public void AffectCalmLevel(int effect) {
+    public void AffectCalmLevel(int effect)
+    {
         calmLevel += effect;
     }
 
-    public void ChangeLocale(bool inside) {
+    public void ChangeLocale(bool inside)
+    {
         if (!inside) outside = true;
         else outside = false;
     }
 
-    void RemoveAllItems() {
+    void RemoveAllItems()
+    {
 
     }
-    public void AddItem(string item, bool add) {
-        switch (item) {
+    public void AddItem(string item, bool add)
+    {
+        switch (item)
+        {
             case "Gun":
-                if (add) {
+                if (add)
+                {
                     hasGun = true;
                 }
-                else {
+                else
+                {
                     hasGun = false;
                 }
                 break;
 
             case "DuctTape":
-                if (add) {
+                if (add)
+                {
                     hasDuctape = true;
                 }
-                else {
+                else
+                {
                     hasDuctape = false;
                 }
                 break;
 
             case "Laptop":
-                if (add) {
+                if (add)
+                {
                     hasLaptop = true;
                 }
-                else {
+                else
+                {
                     hasLaptop = false;
                 }
                 break;
 
             case "CigarBox":
-                if (add) {
+                if (add)
+                {
                     hasCigarBox = true;
                 }
-                else {
+                else
+                {
                     hasCigarBox = false;
                 }
                 break;
 
             case "Crystal":
-                if (add) {
+                if (add)
+                {
                     hasCrystal = true;
                 }
-                else {
+                else
+                {
                     hasCrystal = false;
                 }
                 break;
 
             case "OxygenKit":
-                if (add) {
+                if (add)
+                {
                     wearingOxygenKit = true;
+                    hasOxygen = false;
+                    OxygenStart();
                 }
-                else {
+                else
+                {
                     wearingOxygenKit = false;
                 }
                 break;
@@ -144,35 +180,50 @@ public class StatsHandler : MonoBehaviour {
                 break;
         }
     }
-    private void Update() {
+    private void Update()
+    {
         OxygenDrain();
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            outside = !outside;
+        }
     }
 
-    public void ContinueGame() {
+    public void ContinueGame()
+    {
         //use this from the menu
         isStarting = true;
-        if (myScene != -1f) {
+        if (myScene != -1f)
+        {
             SceneManager.LoadScene(myScene);
         }
     }
 
-    public void NewGame() {
+    public void NewGame()
+    {
         hasSaved = false;
         hasOxygen = false;
         isStarting = true;
         SceneManager.LoadScene("Bus");
     }
 
-    void OxygenDrain() {
-        if (GameObject.FindGameObjectWithTag("Player")) {
+    void OxygenDrain()
+    {
+        if (GameObject.FindGameObjectWithTag("Player"))
+        {
             characterPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
             myScene = SceneManager.GetActiveScene().buildIndex;
-            if (hasOxygen)
-            if (outside) {
+        }
+        if (hasOxygen)
+        {
+            if (outside)
+            {
                 oxygen += -1f * Time.deltaTime;
             }
-            else {
-                if (oxygen < maxOxygen) {
+            else
+            {
+                if (oxygen < maxOxygen)
+                {
                     oxygen += (6f * myMinutesMult) * Time.deltaTime;
                     busOxygen -= (6f * myMinutesMult) * Time.deltaTime;
                 }
