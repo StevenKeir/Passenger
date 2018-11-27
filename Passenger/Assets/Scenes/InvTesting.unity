@@ -1274,6 +1274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1527873911}
   pauseBackground: {fileID: 1920437576}
+  paused: 0
 --- !u!1 &1409576379 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1792840102561242, guid: f83fbfb11af970b4c8b3fd6700ecd891,
@@ -1548,6 +1549,7 @@ GameObject:
   - component: {fileID: 1563894626}
   - component: {fileID: 1563894630}
   - component: {fileID: 1563894629}
+  - component: {fileID: 1563894631}
   m_Layer: 5
   m_Name: Exit_Button
   m_TagString: Untagged
@@ -1612,7 +1614,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1563894627}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1563894631}
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1563894627
@@ -1681,6 +1694,18 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &1563894631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1563894624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf05abb17b82b24da744b91ffae7cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 0
 --- !u!1 &1581380483
 GameObject:
   m_ObjectHideFlags: 0
