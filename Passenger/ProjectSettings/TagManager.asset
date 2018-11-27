@@ -8,6 +8,12 @@ TagManager:
   - StatHandler
   - Inventory
   - OxygenKit
+  - Lawyer
+  - Officer
+  - Traveller
+  - Scientist
+  - Engineer
+  - Door
   layers:
   - Default
   - TransparentFX
