@@ -10679,7 +10679,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: -137.49687
-    y: 158.70854
+    y: 156.70854
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -10876,7 +10876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 532.2151, y: 238.39056}
+  scrollPos: {x: 604.2151, y: 6.390564}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -10888,7 +10888,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 288116874}
+  - {fileID: 288116847}
   selectedCommands: []
   variables:
   - {fileID: 288116860}
@@ -18084,7 +18084,6 @@ GameObject:
   - component: {fileID: 1209608976}
   - component: {fileID: 1209608959}
   - component: {fileID: 1209608998}
-  - component: {fileID: 1209609044}
   - component: {fileID: 1209609043}
   - component: {fileID: 1209608958}
   - component: {fileID: 1209608957}
@@ -18157,6 +18156,7 @@ GameObject:
   - component: {fileID: 1209608995}
   - component: {fileID: 1209608990}
   - component: {fileID: 1209609014}
+  - component: {fileID: 1209609044}
   m_Layer: 0
   m_Name: FlowchartIntroS1
   m_TagString: Untagged
@@ -18177,7 +18177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 328.1627, y: 189.8421}
+  scrollPos: {x: 409.1627, y: 52.842102}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -18189,7 +18189,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1209609060}
+  - {fileID: 1209609058}
   selectedCommands: []
   variables:
   - {fileID: 1209608958}
@@ -20745,24 +20745,23 @@ MonoBehaviour:
 --- !u!114 &1209609044
 MonoBehaviour:
   m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 114820691497094754, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1209608955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 34
+  itemId: 113
   indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1209608959}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1209608955}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1209609045
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -27466,8 +27465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 166.16962
-    y: 373.8168
+    x: 167.16962
+    y: 372.8168
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -28334,7 +28333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 810, y: 316}
+  scrollPos: {x: 793, y: 58}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -28346,9 +28345,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1311195466}
-  selectedCommands:
-  - {fileID: 1311195387}
+  - {fileID: 1311195473}
+  selectedCommands: []
   variables:
   - {fileID: 1311195460}
   - {fileID: 1311195458}
@@ -34486,8 +34484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 195.5
-    y: 1.5
+    x: 194.5
+    y: 0.5
     width: 126.666664
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -34553,7 +34551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 309, y: 284}
+  scrollPos: {x: 309, y: 215}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -34566,8 +34564,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1647171338}
-  selectedCommands:
-  - {fileID: 1647171337}
+  selectedCommands: []
   variables:
   - {fileID: 1647171343}
   - {fileID: 1647171340}
@@ -38059,6 +38056,10 @@ Prefab:
         type: 2}
       propertyPath: nodeRect.x
       value: 234.49374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599222604567702, guid: 003dc72f5722ec04eb66b1735d6765b4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 003dc72f5722ec04eb66b1735d6765b4, type: 2}
