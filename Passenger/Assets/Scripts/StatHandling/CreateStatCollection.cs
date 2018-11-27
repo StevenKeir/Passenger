@@ -14,8 +14,18 @@ public class CreateStatCollection : MonoBehaviour {
             mySH = mySHobj.GetComponent<StatsHandler>();
             mySH.myBusMinutesMult = busOxyMult;
             mySH.myMinutesMult = myOxyMult;
-            mySH.hasOxygen = true;
         }
-        Destroy(gameObject);
+        else {
+            mySHobj = GameObject.FindGameObjectWithTag("StatHandler");
+            mySH = mySHobj.GetComponent<StatsHandler>();
+        }
+    }
+
+    public void StartNewGame() {
+        mySH.NewGame();
+    }
+
+    public void ContinueGame() {
+        mySH.ContinueGame();
     }
 }
