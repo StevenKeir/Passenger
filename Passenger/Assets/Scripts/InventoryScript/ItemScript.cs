@@ -14,6 +14,7 @@ public class ItemScript : MonoBehaviour {
     public InventoryItem inventoryItem;
     public Inventory invScript;
     public GameObject Oxygenkit;
+    public PauseMenu paused;
 
     private void Awake()
     {
@@ -23,7 +24,11 @@ public class ItemScript : MonoBehaviour {
         }
         if (invScript == null)
         {
-            invScript = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
+            invScript = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<Inventory>();
+        }
+        if(paused == null)
+        {
+            paused = GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenu>();
         }
     }
 
@@ -43,7 +48,7 @@ public class ItemScript : MonoBehaviour {
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !paused.paused)
         {
             //print("interacted");
             statHandler.AddItem(itemString, true);
