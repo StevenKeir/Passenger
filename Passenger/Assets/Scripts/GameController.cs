@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour {
 
+    public static int gameIntensity;
+
 	// Use this for initialization
 	void Start () {
-		
+
+        gameIntensity = 1;
+
 	}
 	
 	// Update is called once per frame

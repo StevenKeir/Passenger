@@ -5,8 +5,85 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour {
 
-    public AudioMixer masterMixer; //accesses master mixer
 
+    public int intensity;
+    public bool coCheck = false;
+    public AudioMixer masterMixer; //accesses master mixer
+  
+
+    void Start() {
+
+        //intensity level set here
+
+    }
+
+
+    void Update() {
+
+        if (!coCheck)
+        {
+            float currVolume;
+
+            /* // Fade in test code 
+            if (Input.GetKey(KeyCode.U))
+            {
+                masterMixer.GetFloat("Bass", out currVolume);
+                StartCoroutine(FadeInMixer(masterMixer, "Bass", currVolume, 0f, 20f, coCheck));
+            }
+            else if (Input.GetKey(KeyCode.I))
+            {
+                masterMixer.GetFloat("Bass", out currVolume);
+                StartCoroutine(FadeOutMixer(masterMixer, "Bass", currVolume, -80f, 20f, coCheck));
+            }
+            */
+
+
+            if (intensity >= 1)
+            {
+                masterMixer.GetFloat("Bass", out currVolume);
+                StartCoroutine(FadeInMixer(masterMixer, "Bass", currVolume, 0f, 20f, coCheck));
+            }
+            else 
+            {
+                masterMixer.GetFloat("Bass", out currVolume);
+                StartCoroutine(FadeOutMixer(masterMixer, "Bass", currVolume, -80f, 20f, coCheck));
+            }
+
+            if (intensity >= 2)
+            {
+                masterMixer.GetFloat("Synths", out currVolume);
+                StartCoroutine(FadeInMixer(masterMixer, "Synths", currVolume, 0f, 20f, coCheck));
+            }
+            else
+            {
+                masterMixer.GetFloat("Synths", out currVolume);
+                StartCoroutine(FadeOutMixer(masterMixer, "Synths", currVolume, -80f, 20f, coCheck));
+            }
+
+            if (intensity >= 3)
+            {
+                masterMixer.GetFloat("Samples", out currVolume);
+                StartCoroutine(FadeInMixer(masterMixer, "Samples", currVolume, 0f, 20f, coCheck));
+            }
+            else
+            {
+                masterMixer.GetFloat("Samples", out currVolume);
+                StartCoroutine(FadeOutMixer(masterMixer, "Samples", currVolume, -80f, 20f, coCheck));
+            }
+
+            if (intensity >= 4)
+            {
+                masterMixer.GetFloat("Beats", out currVolume);
+                StartCoroutine(FadeInMixer(masterMixer, "Beats", currVolume, 0f, 20f, coCheck));
+            }
+            else 
+            {
+                masterMixer.GetFloat("Beats", out currVolume);
+                StartCoroutine(FadeOutMixer(masterMixer, "Beats", currVolume, -80f, 20f, coCheck));
+            }
+             
+        }
+    }
 
 
     public void SetMasterLvl(float masterLvl) {
@@ -47,6 +124,46 @@ public class AudioManager : MonoBehaviour {
     public void SetSamples2Lvl(float samples2Lvl)
     {
         masterMixer.SetFloat("Samples2", samples2Lvl);
+    }
+
+
+    //Fade in/Outs
+
+    public static IEnumerator FadeInMixer(AudioMixer audioMixer, string varName, float startVolume, float maxVolume, float FadeTime, bool coCheck)
+    {
+
+        coCheck = true;
+        float currVolume = startVolume;
+
+        while (currVolume < maxVolume)
+        {
+            currVolume += (Time.deltaTime * FadeTime);
+
+            audioMixer.SetFloat(varName, currVolume);
+
+            yield return null;
+
+        }
+        coCheck = false;
+        yield return null;
+    }
+
+    public static IEnumerator FadeOutMixer (AudioMixer audioMixer, string varName, float startVolume, float minVolume, float FadeTime, bool coCheck)
+    {
+        coCheck = true;
+          float currVolume = startVolume;
+
+          while (currVolume >= minVolume)
+        {
+            currVolume -= (Time.deltaTime * FadeTime);
+
+            audioMixer.SetFloat(varName, currVolume);
+
+            yield return null;
+
+        }
+        coCheck = false;
+        yield return null;
     }
 
 

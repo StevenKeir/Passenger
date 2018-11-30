@@ -6,6 +6,20 @@ using UnityEngine.Audio;
 public class AudioFadeScript : MonoBehaviour {
 
 
+    void Start() {
+
+
+
+    }
+
+
+    void Update() {
+
+    
+
+    }
+
+
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {
         float startVolume = audioSource.volume;
@@ -17,7 +31,7 @@ public class AudioFadeScript : MonoBehaviour {
             yield return null;
         }
 
-        audioSource.Stop();
+       // audioSource.Stop();
         audioSource.volume = startVolume;
     }
 
@@ -26,7 +40,7 @@ public class AudioFadeScript : MonoBehaviour {
         float startVolume = 0.2f;
 
         audioSource.volume = 0;
-        audioSource.Play();
+       // audioSource.Play();
 
         while (audioSource.volume < 1.0f)
         {
@@ -43,6 +57,8 @@ public class AudioFadeScript : MonoBehaviour {
  
         // start game music
         //StartCoroutine(AudioFadeScript.FadeIn(audioGameMusic, 5f));
+
+
 
 }
 
