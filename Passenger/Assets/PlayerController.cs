@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour {
         var sayDialog = Fungus.SayDialog.GetSayDialog();
         var menuDialog = Fungus.MenuDialog.GetMenuDialog();
 
+
         if (!sayDialog.isActiveAndEnabled && !menuDialog.isActiveAndEnabled) {
             pacTarget.inputEnabled = true;
         } else {
