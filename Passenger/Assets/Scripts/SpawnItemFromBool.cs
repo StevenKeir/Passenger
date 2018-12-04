@@ -31,5 +31,6 @@ public class SpawnItemFromBool : MonoBehaviour {
                 hasSpawned = true;
             }
         }
+
     }
 }

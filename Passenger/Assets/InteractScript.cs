@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour {
 
-    public GameObject traveller;
-    public GameObject scientist;
-    public GameObject officer;
-    public GameObject lawyer;
-    public GameObject engineer;
+    public GameObject flowchart;
 
+    public bool mouseOver;
 
     // Use this for initialization
     void Start () {
@@ -24,35 +21,30 @@ public class InteractScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
+        if (mouseOver == true) {
 
-        //do a raycast here to see which character player is pointing at
-        if (Input.GetMouseButtonDown(0)) { 
+            //do a raycast here to see which character player is pointing at
+            if (Input.GetMouseButtonDown(0)) {
 
-            //if player triggers character object
-            if (other.gameObject.CompareTag("Traveller"))
-            {
-                traveller.SetActive(true);
-            }
-            if (other.gameObject.CompareTag("Scientist"))
-            {
-                scientist.SetActive(true);
-            }
-            if (other.gameObject.CompareTag("Officer"))
-            {
-                officer.SetActive(true);
-            }
-            if (other.gameObject.CompareTag("Lawyer"))
-            {
-                lawyer.SetActive(true);
-            }
-            if (other.gameObject.CompareTag("Engineer"))
-            {
-                engineer.SetActive(true);
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    flowchart.SetActive(true);
+                }
+
             }
 
-     }
+        }
 
 
+    }
+    private void OnMouseEnter()
+    {
+        mouseOver = true;
+
+    }
+    private void OnMouseExit()
+    {
+        mouseOver = false;
     }
 
 }
