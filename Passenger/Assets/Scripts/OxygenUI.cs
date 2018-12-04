@@ -21,6 +21,13 @@ public class OxygenUI : MonoBehaviour {
 
     void Oxygen()
     {
-        targetUI.fillAmount = handler.oxygen / (handler.maxOxygen);
+        if (handler.outside)
+        {
+            targetUI.fillAmount = handler.oxygen / handler.maxOxygen;
+        }
+        else
+        {
+            targetUI.fillAmount = handler.busOxygen / handler.origBusOxygen;
+        }
     }
 }

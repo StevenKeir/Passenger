@@ -28,9 +28,6 @@ public class StatsHandler : MonoBehaviour
         }
         if (isStarting)
         {
-            origBusOxygen = busOxygen;
-            origOxygen = oxygen;
-            origCalmLevel = calmLevel;
             if (hasSaved)
             {
                 GameObject.FindGameObjectWithTag("Player").transform.position = characterPosition;
@@ -60,12 +57,15 @@ public class StatsHandler : MonoBehaviour
         hasOxygen = true;
         //60 * 180 = 2 hours;
         busOxygen = 60f * myBusMinutesMult;
+        origBusOxygen = busOxygen;
         //calm level starts at negative so it affects oxygen the same way
         calmLevel = -60f;
+        origCalmLevel = calmLevel;
         //maxOxygen is the kit's maximum capacity. 60f = 60 seconds, mult = how many minutes.
         maxOxygen = 60f * myMinutesMult;
         //the oxygen kit is full at the start, since it's inside the bus
         oxygen = maxOxygen;
+        origOxygen = oxygen;
     }
     //characterStats:
     Vector3 characterPosition;
@@ -73,7 +73,7 @@ public class StatsHandler : MonoBehaviour
 
     //oxygen
     public float busOxygen;
-    float origBusOxygen;
+    public float origBusOxygen;
     public float maxOxygen;
     public float oxygen;
     float origOxygen;

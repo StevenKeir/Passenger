@@ -15,6 +15,9 @@ public class ItemScript : MonoBehaviour {
     public Inventory invScript;
     public GameObject Oxygenkit;
     public PauseMenu paused;
+    public Texture2D defaultCursor;
+    public Texture2D grabCursor;
+    public Vector2 cursorHotspot = new Vector2(0, 0);
 
     private void Awake()
     {
@@ -28,8 +31,9 @@ public class ItemScript : MonoBehaviour {
         }
         if(paused == null)
         {
-            paused = GameObject.FindGameObjectWithTag("Canvas").GetComponent<PauseMenu>();
+            paused = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<PauseMenu>();
         }
+        Cursor.SetCursor(defaultCursor, cursorHotspot, CursorMode.Auto);
     }
 
     public void Start()
@@ -60,6 +64,17 @@ public class ItemScript : MonoBehaviour {
 
             Destroy(this.gameObject);
         }
+    }
+
+    private void OnMouseEnter()
+    {
+        Cursor.SetCursor(grabCursor, cursorHotspot, CursorMode.Auto);
+    }
+    private void OnMouseExit()
+    {
+        
+
+        Cursor.SetCursor(defaultCursor, cursorHotspot, CursorMode.Auto);
     }
 
     public void Interact()

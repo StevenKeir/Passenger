@@ -115,3 +115,9 @@ MonoBehaviour:
   inventoryItem: {fileID: 11400000, guid: d347578d4230bb04c9d6e2a9fb3315b2, type: 2}
   invScript: {fileID: 0}
   Oxygenkit: {fileID: 0}
+  paused: {fileID: 0}
+  defaultCursor: {fileID: 0}
+  talkCursor: {fileID: 0}
+  walkCursor: {fileID: 0}
+  grabCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}

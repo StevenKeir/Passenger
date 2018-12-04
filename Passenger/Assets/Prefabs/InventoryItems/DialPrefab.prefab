@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1585013599173430}
   m_LocalRotation: {x: -0, y: -0.19569616, z: -0, w: 0.9806646}
-  m_LocalPosition: {x: 1.5474765, y: -1.211886, z: -1.2296748}
+  m_LocalPosition: {x: 4.02, y: -1.211886, z: -4.13}
   m_LocalScale: {x: 117.005394, y: 117.00541, z: 117.005394}
   m_Children: []
   m_Father: {fileID: 0}
@@ -118,3 +118,9 @@ MonoBehaviour:
   inventoryItem: {fileID: 0}
   invScript: {fileID: 0}
   Oxygenkit: {fileID: 0}
+  paused: {fileID: 0}
+  defaultCursor: {fileID: 0}
+  talkCursor: {fileID: 0}
+  walkCursor: {fileID: 0}
+  grabCursor: {fileID: 0}
+  cursorHotspot: {x: 0, y: 0}
