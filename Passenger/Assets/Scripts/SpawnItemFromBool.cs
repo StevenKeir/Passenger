@@ -11,17 +11,22 @@ public class SpawnItemFromBool : MonoBehaviour {
     //this string should be named EXACTLY as the variable you want to load (ie, "spawnObject" or "Spawn Laptop" or whatever else.
     public string myItem;
 
-    //create a gameobject and place it where you want the object to be
-    public GameObject myInstantiatePosition;
+    //drag and drop the item to be activated when the bool is true;
+    public GameObject myItemCollider;
+    Collider myCol;
 
-    //drag and drop the item to be spawned when the bool is true;
-    public GameObject myItemSpawn;
+    private void Start() {
+        myCol = myItemCollider.GetComponent<Collider>();
+        myCol.enabled = false;
+    }
 
     private void Update() {
+        if (!hasSpawned) {
         myBool = myFlow.GetBooleanVariable(myItem);
-        if (myBool &&!hasSpawned) {
-            Instantiate(myItemSpawn, myInstantiatePosition.transform.position, myInstantiatePosition.transform.rotation);
-            hasSpawned = true;
+            if (myBool) {
+                myCol.enabled = true;
+                hasSpawned = true;
+            }
         }
     }
 }
