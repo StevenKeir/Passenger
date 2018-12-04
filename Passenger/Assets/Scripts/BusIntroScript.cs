@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class BusIntroScript : MonoBehaviour {
 
@@ -15,7 +16,8 @@ public class BusIntroScript : MonoBehaviour {
     public GameObject traveller;
     public Animator travellerAnim;
 
-    public bool seated;
+    public bool intro;
+    public bool scene2;
 
     // Use this for initialization
     void Start () {
@@ -26,26 +28,46 @@ public class BusIntroScript : MonoBehaviour {
        scientistAnim = scientist.GetComponent<Animator>();
        travellerAnim = traveller.GetComponent<Animator>();
 
-        seated = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        /*
+        if (intro == true) {
+            Intro();
+        }
+        if (scene2 == true)
+        {
+            Scene2();
+        }
+        */
+    }
 
-        Seated();
+    void Intro() {
 
-	}
-
-    void Seated() {
-
-        if (seated == true) {
             playerAnim.SetBool("Seated", true);
             lawyerAnim.SetBool("Seated", true);
             officerAnim.SetBool("Seated", true);
             scientistAnim.SetBool("Seated", true);
             travellerAnim.SetBool("Seated", true);
-        }
+        
+    }
 
+    void Scene2() {
+
+        officerAnim.SetBool("Pickup", true);
+        lawyerAnim.SetBool("Seated", true);
+        
+    }
+
+    void IntroSequence ()
+    {
+        Intro();
+    }
+
+    void Scene2Sequence()
+    {
+        Scene2();
     }
 
 }

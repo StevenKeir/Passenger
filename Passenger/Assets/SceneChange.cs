@@ -3,12 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour {
+
     public string sceneName;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Character")
         {
             SceneManager.LoadScene(sceneName);
         }
+    }
+
+    void SceneSwap() {
+
+        SceneManager.LoadScene("Bus");
+
     }
 }

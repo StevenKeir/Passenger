@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour {
 
-    public PaCTarget pacScript;
     public GameObject traveller;
     public GameObject scientist;
     public GameObject officer;
@@ -25,8 +24,6 @@ public class InteractScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-
-        //pacScript.inputEnabled = false;
 
         //do a raycast here to see which character player is pointing at
         if (Input.GetMouseButtonDown(0)) { 
