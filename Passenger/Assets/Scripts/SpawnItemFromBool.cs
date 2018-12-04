@@ -13,10 +13,13 @@ public class SpawnItemFromBool : MonoBehaviour {
 
     //drag and drop the item to be activated when the bool is true;
     public GameObject myItemCollider;
-    Collider myCol;
+    MeshCollider myCol;
 
     private void Start() {
-        myCol = myItemCollider.GetComponent<Collider>();
+        myCol = myItemCollider.GetComponent<MeshCollider>();
+        if (myFlow == null) {
+            myFlow = GameObject.FindGameObjectWithTag("Flowchart").GetComponent<Flowchart>();
+        }
         myCol.enabled = false;
     }
 

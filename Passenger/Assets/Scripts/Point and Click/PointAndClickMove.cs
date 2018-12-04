@@ -25,6 +25,7 @@ public class PointAndClickMove : MonoBehaviour
     {
         if (myAgent.velocity.magnitude < stoppingVelocity) //(myAgent.remainingDistance < myAgent.radius) ||
         {
+            if (animator != null)
             animator.SetBool("Walk", false);
         }
    
