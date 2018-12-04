@@ -70,10 +70,9 @@ public class ItemScript : MonoBehaviour {
     {
         Cursor.SetCursor(grabCursor, cursorHotspot, CursorMode.Auto);
     }
+
     private void OnMouseExit()
     {
-        
-
         Cursor.SetCursor(defaultCursor, cursorHotspot, CursorMode.Auto);
     }
 

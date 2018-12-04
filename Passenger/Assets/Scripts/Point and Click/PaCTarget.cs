@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class PaCTarget : MonoBehaviour {
 
     PointAndClickMove myPaC;
@@ -9,6 +10,10 @@ public class PaCTarget : MonoBehaviour {
     public bool canWalk;
     public bool inputEnabled = true;
 
+  //  public Texture2D cursorTextureWalkable;
+  //  public Texture2D cursorTextureNotWalkable;
+  //  public CursorMode cursorMode = CursorMode.Auto;
+  //  public Vector2 hotSpot = Vector2.zero;
 
     private void Start() {
         mask = LayerMask.GetMask("Map");
@@ -16,48 +21,56 @@ public class PaCTarget : MonoBehaviour {
         canWalk = true;
     }
 
-    void Update() {
-        CursorChange();
+    void Update()
+    {
+        //CursorChange();
         Vector3 newTarget = Vector3.zero;
         RaycastHit hit;
         if (Input.GetMouseButton(0) && inputEnabled == true) {
-            //Debug.Log("I Click mouse you fuck why you no move fucker");
-            
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, mask)) {
-                Debug.Log(hit);
+            Debug.Log("Moving to new target");
+
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, mask))
+            {
+                var raycastHit = hit;
                 newTarget = hit.point;
                 if (canWalk)
                 {
                     myPaC.UpdateTarget(newTarget);
                 }
             }
-        }
+         }
     }
 
-    void CursorChange()
+    /*
+    void CursorChange ()
     {
-        Vector3 rayPos;
-        RaycastHit hit2;
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit2, Mathf.Infinity, mask))
+        bool isWalkable;
+
+        RaycastHit hitPoint;
+        Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitPoint, Mathf.Infinity, mask);
+        Vector3 myHitPoint = hitPoint.point;
+     
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(myHitPoint, out hit, 5f, mask))
         {
-            rayPos = hit2.point;
-            NavMeshHit hit;
-            NavMesh.SamplePosition(rayPos, out hit, float.MaxValue, 1 << NavMesh.AllAreas);
-            if ((hit2.point.x >= hit.position.x - 0.05f) &&
-                (hit2.point.x <= hit.position.x + 0.05f) &&
-                (hit2.point.y >= hit.position.y - 0.05f) &&
-                (hit2.point.y <= hit.position.y + 0.05f) &&
-                (hit2.point.z >= hit.position.z - 0.05f) &&
-                (hit2.point.z <= hit.position.z + 0.05f))
-            {
-                Debug.Log("Walking possible");
-                //cursor change to walk
-            }
-            else
-            {
-                Debug.Log("not possible");
-                //cursor change to normal
-            }
+            isWalkable = true;
         }
+        else
+        {
+            isWalkable = false;
+        }
+
+        if (isWalkable)
+        {
+            Debug.Log("Is walkable...");
+            Cursor.SetCursor(cursorTextureWalkable, hotSpot, cursorMode);
+        }
+        else 
+        {
+            Debug.Log("Is not walkable...");
+            Cursor.SetCursor(cursorTextureNotWalkable, hotSpot, cursorMode);
+        }
+
     }
+    */
 }
