@@ -8377,7 +8377,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &618626612
 Prefab:
@@ -11708,7 +11708,7 @@ Transform:
   - {fileID: 2117641980}
   - {fileID: 692334961}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1115320806
 Prefab:
@@ -19728,6 +19728,10 @@ Prefab:
     - target: {fileID: 224953620254839496, guid: f83fbfb11af970b4c8b3fd6700ecd891,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792840102561242, guid: f83fbfb11af970b4c8b3fd6700ecd891, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -29268,7 +29272,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1856929942
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29292,7 +29296,7 @@ Transform:
   m_LocalScale: {x: 1.5697, y: 3.2483, z: 1.5014}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1856929944
 MonoBehaviour:
