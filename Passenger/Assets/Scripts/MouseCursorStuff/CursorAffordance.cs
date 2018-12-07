@@ -7,7 +7,7 @@ public enum Layer
     UI = 5,             // this is a unity default constant, so never change this unless you are setting up unique UI layers
     Walkable = 10,        // where character can walk to
     Item = 12,           // thing to pick up
-    Character = 30,          // hostile NPCs (attacking a valid NPC will turn it into an character)
+    Character = 13,          // hostile NPCs (attacking a valid NPC will turn it into an character)
     RaycastEndStop = 31
 }
 

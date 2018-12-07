@@ -94,19 +94,20 @@ public class CameraRaycaster : MonoBehaviour
     public bool IsReachable(Vector3 startPoint, Vector3 endPoint)
     {
         // Both methods work, except they both return sky as a navigable point...
-        
+       /*
         // SAMPLE POSITION DETECTION METHOD - 
         NavMeshHitResult navMeshHitResult = RaycastToNavmesh(endPoint);
         bool result = navMeshHitResult.result;
-        
+  */
 
-        /*
+        
         // NAVMESH PATH DETECTION METHOD - is the point navigable?
         bool result = false;
         NavMeshPath path = new NavMeshPath();
         if (NavMesh.CalculatePath(startPoint, endPoint, NavMesh.AllAreas, path))
             return true;
-      */
+        
+
         return result;
     }
 
@@ -133,7 +134,7 @@ public class CameraRaycaster : MonoBehaviour
             hasHit = Physics.Raycast(ray, out hit, distanceToBackground, layerMask);
         }
 
-        Debug.DrawRay(ray.origin, ray.direction * 100, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction * 1000, Color.red);
         if (hasHit)
         {
             return hit;
