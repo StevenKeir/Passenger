@@ -15,6 +15,7 @@ TagManager:
   - Engineer
   - Door
   - Canvas
+  - Flowchart
   layers:
   - Default
   - TransparentFX
