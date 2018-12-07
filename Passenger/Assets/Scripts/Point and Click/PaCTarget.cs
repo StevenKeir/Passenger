@@ -16,7 +16,7 @@ public class PaCTarget : MonoBehaviour {
   //  public Vector2 hotSpot = Vector2.zero;
 
     private void Start() {
-        mask = LayerMask.GetMask("Map");
+        mask = LayerMask.GetMask("Walkable");
         myPaC = GetComponent<PointAndClickMove>();
         canWalk = true;
     }
