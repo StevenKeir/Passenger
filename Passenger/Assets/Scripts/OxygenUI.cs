@@ -5,18 +5,22 @@ using UnityEngine.UI;
 public class OxygenUI : MonoBehaviour {
 
 
-    StatsHandler handler;
+    public StatsHandler handler;
     private Image targetUI;
 
 
     private void Start()
     {
-        handler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+        //handler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
         targetUI = GetComponent<Image>();
     }
 
     private void Update() {
         Oxygen();
+        if(handler == null)
+        {
+            handler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+        }
     }
 
     void Oxygen()
