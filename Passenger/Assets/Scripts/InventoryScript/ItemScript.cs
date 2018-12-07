@@ -19,7 +19,7 @@ public class ItemScript : MonoBehaviour {
     public Texture2D grabCursor;
     public Vector2 cursorHotspot = new Vector2(0, 0);
 
-    private void Awake()
+    private void EarlyStart()
     {
         if (Oxygenkit == null)
         {
@@ -38,6 +38,7 @@ public class ItemScript : MonoBehaviour {
 
     public void Start()
     {
+        EarlyStart();
         itemString = myItem.ToString();
         Oxygenkit.SetActive(false);         //Sets to false so the player can pickup later in the game.
     }

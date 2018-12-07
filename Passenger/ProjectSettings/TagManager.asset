@@ -26,8 +26,10 @@ TagManager:
   - 
   - PostProcessing
   - Trigger
-  - Map
+  - Walkable
   - Player
+  - Item
+  - Character
   - 
   - 
   - 
@@ -45,9 +47,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - RaycastEndStop
   m_SortingLayers:
   - name: Default
     uniqueID: 0
