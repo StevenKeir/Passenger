@@ -2,36 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class OxygenUI : MonoBehaviour {
 
 
-    public StatsHandler handler;
+    public StatsHandler HandlerScript;
     private Image targetUI;
 
 
     private void Start()
     {
-        //handler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
         targetUI = GetComponent<Image>();
     }
 
-    private void Update() {
-        Oxygen();
-        if(handler == null)
+    public void Update() {
+ 
+        if (HandlerScript == null)
         {
-            handler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+            HandlerScript = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
         }
+        Oxygen();
     }
 
     void Oxygen()
     {
-        if (handler.outside)
+        if (HandlerScript.outside)
         {
-            targetUI.fillAmount = handler.oxygen / handler.maxOxygen;
+            targetUI.fillAmount = HandlerScript.oxygen / HandlerScript.maxOxygen;
         }
         else
         {
-            targetUI.fillAmount = handler.busOxygen / handler.origBusOxygen;
+            targetUI.fillAmount = HandlerScript.busOxygen / HandlerScript.origBusOxygen;
         }
     }
 }

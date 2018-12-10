@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23047893711443840}
   - component: {fileID: 64010738322484024}
   - component: {fileID: 114814673058051782}
+  - component: {fileID: 65916023624236710}
   m_Layer: 0
   m_Name: CrystalPrefab
   m_TagString: Untagged
@@ -93,12 +94,24 @@ MeshCollider:
   m_GameObject: {fileID: 1220022087039148}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3f652995181f66d46adff75a41072204, type: 3}
+--- !u!65 &65916023624236710
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220022087039148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.076638564, y: 0.096085735, z: 0.07606799}
+  m_Center: {x: 1.7044721e-10, y: 0.001429811, z: -0.000000007535804}
 --- !u!114 &114814673058051782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +130,5 @@ MonoBehaviour:
   Oxygenkit: {fileID: 0}
   paused: {fileID: 0}
   defaultCursor: {fileID: 0}
-  talkCursor: {fileID: 0}
-  walkCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
+  grabCursor: {fileID: 2800000, guid: 92733dd54ffb95047a17627b6e71224e, type: 3}
   cursorHotspot: {x: 0, y: 0}

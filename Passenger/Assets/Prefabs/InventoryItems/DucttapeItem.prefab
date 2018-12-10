@@ -23,7 +23,9 @@ GameObject:
   - component: {fileID: 23374660256653138}
   - component: {fileID: 64854119398381858}
   - component: {fileID: 114984396389475864}
-  m_Layer: 0
+  - component: {fileID: 114249439080346188}
+  - component: {fileID: 65187910764434522}
+  m_Layer: 12
   m_Name: DucttapeItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,13 +38,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1736845965936712}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00747633, y: -1.0718861, z: -6.769675}
-  m_LocalScale: {x: 100.3357, y: 100.3357, z: 100.3357}
+  m_LocalRotation: {x: -0.18035145, y: -0.26302207, z: 0.12409326, w: 0.9396242}
+  m_LocalPosition: {x: -11.695, y: 5.387, z: 15.424}
+  m_LocalScale: {x: 10.804903, y: 10.804903, z: 10.804903}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -15.8810005, y: -34.086002, z: 19.944}
 --- !u!23 &23374660256653138
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -93,12 +95,38 @@ MeshCollider:
   m_GameObject: {fileID: 1736845965936712}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: a9d6e0b6418d65f489941f5ae95d3dd9, type: 3}
+--- !u!65 &65187910764434522
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736845965936712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.03, y: 0.04, z: 0.03}
+  m_Center: {x: 0.00049574114, y: 0.000000059604645, z: 1.477779e-11}
+--- !u!114 &114249439080346188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736845965936712}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaffd33d19ce0e4ba0298c82292f1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myFlow: {fileID: 0}
+  myItem: Ducttape
+  myItemCollider: {fileID: 1736845965936712}
 --- !u!114 &114984396389475864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,7 +145,5 @@ MonoBehaviour:
   Oxygenkit: {fileID: 0}
   paused: {fileID: 0}
   defaultCursor: {fileID: 0}
-  talkCursor: {fileID: 0}
-  walkCursor: {fileID: 0}
   grabCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}

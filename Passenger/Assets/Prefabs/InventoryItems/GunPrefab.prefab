@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23067280052775060}
   - component: {fileID: 64036050473013238}
   - component: {fileID: 114979920906502750}
+  - component: {fileID: 65846821330870162}
   m_Layer: 0
   m_Name: GunPrefab
   m_TagString: Untagged
@@ -94,12 +95,24 @@ MeshCollider:
   m_GameObject: {fileID: 1551415646652756}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 9edafca977f40ef4b9eb4ea424fafb14, type: 3}
+--- !u!65 &65846821330870162
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551415646652756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.034920402, y: 0.11730384, z: 0.14241293}
+  m_Center: {x: -8.843941e-11, y: 0, z: -0.004128743}
 --- !u!114 &114979920906502750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -118,7 +131,5 @@ MonoBehaviour:
   Oxygenkit: {fileID: 0}
   paused: {fileID: 0}
   defaultCursor: {fileID: 0}
-  talkCursor: {fileID: 0}
-  walkCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
+  grabCursor: {fileID: 2800000, guid: 92733dd54ffb95047a17627b6e71224e, type: 3}
   cursorHotspot: {x: 0, y: 0}

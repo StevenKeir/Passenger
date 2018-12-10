@@ -15,25 +15,22 @@ public class ItemScript : MonoBehaviour {
     public Inventory invScript;
     public GameObject Oxygenkit;
     public PauseMenu paused;
-    public Texture2D defaultCursor;
-    public Texture2D grabCursor;
+
     public Vector2 cursorHotspot = new Vector2(0, 0);
+    public Transform player;
+    public float distance;
 
     private void EarlyStart()
     {
-        if (Oxygenkit == null)
-        {
-            Oxygenkit = GameObject.FindGameObjectWithTag("OxygenKit");
-        }
+
         if (invScript == null)
         {
             invScript = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<Inventory>();
         }
         if(paused == null)
         {
-            paused = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<PauseMenu>();
+            paused = GameObject.FindGameObjectWithTag("Inventory").GetComponentInChildren<PauseMenu>();
         }
-        Cursor.SetCursor(defaultCursor, cursorHotspot, CursorMode.Auto);
     }
 
     public void Start()
@@ -49,38 +46,35 @@ public class ItemScript : MonoBehaviour {
         {
             statHandler = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
         }
+        if (Oxygenkit == null)
+        {
+            Oxygenkit = GameObject.FindGameObjectWithTag("OxygenKit");
+        }
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+
+       distance = Vector3.Distance(this.transform.position, player.transform.position);
     }
+
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0) && !paused.paused)
+
+        if (distance <= 1.25f)
         {
-            //print("interacted");
-            statHandler.AddItem(itemString, true);
-            Interact();
-            if(myItem == Items.OxygenKit)
+            if (Input.GetMouseButtonDown(0) && !paused.paused)
             {
-                OxygenUI();
+                //print("interacted");
+                statHandler.AddItem(itemString, true);
+                
+                if (myItem == Items.OxygenKit)
+                {
+                    OxygenUI();
+                }
+
+                Destroy(this.gameObject);
             }
-
-            Destroy(this.gameObject);
         }
-    }
-
-    private void OnMouseEnter()
-    {
-        Cursor.SetCursor(grabCursor, cursorHotspot, CursorMode.Auto);
-    }
-
-    private void OnMouseExit()
-    {
-        Cursor.SetCursor(defaultCursor, cursorHotspot, CursorMode.Auto);
-    }
-
-    public void Interact()
-    {
-       // print("interacted");
-        
 
     }
 
