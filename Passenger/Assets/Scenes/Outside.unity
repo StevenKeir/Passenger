@@ -176,6 +176,10 @@ Prefab:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 915eb7661c726ab4f87427350dc3ad34, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80f25ab4c82b5604f8aaec1213181e7c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 915eb7661c726ab4f87427350dc3ad34, type: 3}
   m_IsPrefabAsset: 0
@@ -1384,7 +1388,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4232e0ddc9ab30f46b3b4b3092d6d058, type: 2}
+      objectReference: {fileID: 2100000, guid: 86b84b1f3c671ab4eb4f7d67d37153bd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 893de0a9332b11248960e237d731b9e6, type: 3}
   m_IsPrefabAsset: 0
