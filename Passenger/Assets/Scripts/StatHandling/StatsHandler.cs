@@ -94,12 +94,6 @@ public class StatsHandler : MonoBehaviour
         calmLevel += effect;
     }
 
-    public void ChangeLocale(bool inside)
-    {
-        if (!inside) outside = true;
-        else outside = false;
-    }
-
     void RemoveAllItems()
     {
 
@@ -222,7 +216,7 @@ public class StatsHandler : MonoBehaviour
             characterPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
             myScene = SceneManager.GetActiveScene().buildIndex;
         }
-        if (hasOxygen)
+        if (hasOxygen && "MainMenu_WithBus" != SceneManager.GetActiveScene().name)
         {
             if (outside)
             {
