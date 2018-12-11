@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public int sceneToLoad;
+    StatsHandler mySH;
+    private void Start() {
+        mySH = GameObject.FindGameObjectWithTag("StatHandler").GetComponent<StatsHandler>();
+    }
 
     public void StartGame()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        mySH.NewGame();
+    }
+
+    public void LoadGame() {
+        mySH.ContinueGame();
     }
 
     public void QuitGame()

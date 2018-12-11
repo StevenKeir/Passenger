@@ -180,8 +180,16 @@ public class StatsHandler : MonoBehaviour
                 break;
         }
     }
+
+    void SceneCheck() {
+        if ("MainMenu_WithBus" != SceneManager.GetActiveScene().name && isStarting) {
+            myScene = SceneManager.GetActiveScene().buildIndex;
+        }
+    }
+
     private void Update()
     {
+        SceneCheck();
         OxygenDrain();
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -204,7 +212,7 @@ public class StatsHandler : MonoBehaviour
         hasSaved = false;
         hasOxygen = false;
         isStarting = true;
-        SceneManager.LoadScene("Bus");
+        SceneManager.LoadScene("BusIntro");
     }
 
     void OxygenDrain()

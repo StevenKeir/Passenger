@@ -548,6 +548,16 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 5f7b857b249348a41ba1a2fb55aa2f7a,
         type: 3}
+    - target: {fileID: 114934045156820952, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934045156820952, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: BusIntro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989f1928e44126f43b943368931374a2, type: 2}
   m_IsPrefabAsset: 0
