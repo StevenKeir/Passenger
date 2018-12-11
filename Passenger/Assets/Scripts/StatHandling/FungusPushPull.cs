@@ -105,7 +105,7 @@ public class FungusPushPull : MonoBehaviour {
                     }
                 }
 
-                //The following section checks for whether a bool exists. Fungus is stupid and dumb and sets this check to "0" if it does not, meaning I can't get it's value from this.
+                //The following section checks for whether an int exists. Fungus is stupid and dumb and sets this check to "0" if it does not, meaning I can't get it's value from this.
                 //to counter that, I have done the following:
                 //The same as above, except instead of setting it to false, adds one to the value.
 
