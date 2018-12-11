@@ -118,7 +118,9 @@ public class FungusPushPull : MonoBehaviour {
                 else {
                     myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) + 1);
                     if (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) != 0) {
-                        intName.Add(myFlowcharts[i].GetVariableNames()[f]);
+                        if (!intName.Contains(myFlowcharts[i].GetVariableNames()[f])) {
+                            intName.Add(myFlowcharts[i].GetVariableNames()[f]);
+                        }
                         myInt.Add(myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
                         myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) - 1);
                     }
