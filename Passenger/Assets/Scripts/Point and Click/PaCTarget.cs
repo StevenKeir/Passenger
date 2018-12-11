@@ -39,6 +39,8 @@ public class PaCTarget : MonoBehaviour {
                 }
             }
          }
+
+        myPaC.UpdateTargetIcon();
     }
 
     /*

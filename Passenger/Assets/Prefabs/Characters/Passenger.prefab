@@ -952,6 +952,9 @@ MonoBehaviour:
   myAgent: {fileID: 195126594497593292}
   animator: {fileID: 95474383168429476}
   stoppingVelocity: 0.01
+  targetIcon: {fileID: 0}
+  targetOffset: 0.02
+  targetRange: 0.5
 --- !u!114 &114608528312220492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1016,8 +1019,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d058373ea21eb4d9f10b8b31ca2809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneChange: {fileID: 0}
   flowchart: {fileID: 0}
   mouseOver: 0
+  talked: 0
+  maxTalk: 0
 --- !u!114 &114898362347096142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1039,7 +1045,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1148569164196566}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1122,11 +1128,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 1
-  m_Speed: 4
-  m_Acceleration: 1.5
+  m_Speed: 2
+  m_Acceleration: 10
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_AngularSpeed: 360
+  m_StoppingDistance: 0.25
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

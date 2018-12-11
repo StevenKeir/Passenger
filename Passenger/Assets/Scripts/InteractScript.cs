@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class InteractScript : MonoBehaviour {
 
+    public SceneChange sceneChange; // reference to scene load script
     public GameObject flowchart;
-
     public bool mouseOver;
+    public bool talked;
+    public bool maxTalk;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+        talked = false;
+        if (talked == true)
+        {
+            sceneChange.introTalkInt++;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-      
 	}
 
     private void OnTriggerStay(Collider other)
@@ -29,19 +35,24 @@ public class InteractScript : MonoBehaviour {
                 if (other.gameObject.CompareTag("Player"))
                 {
                     flowchart.SetActive(true);
+                    if (talked != true)
+                    {
+                        sceneChange.introTalkInt++;
+                        talked = true;
+                    }
                 }
 
             }
 
         }
-
-
     }
+
     private void OnMouseEnter()
     {
         mouseOver = true;
 
     }
+
     private void OnMouseExit()
     {
         mouseOver = false;

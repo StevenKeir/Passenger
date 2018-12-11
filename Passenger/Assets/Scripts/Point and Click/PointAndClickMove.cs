@@ -11,6 +11,11 @@ public class PointAndClickMove : MonoBehaviour
     public Animator animator;
     public float stoppingVelocity = 0.01f;
 
+    // targeticon
+    public GameObject targetIcon;
+    public float targetOffset;
+    public float targetRange = .2f;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -19,6 +24,7 @@ public class PointAndClickMove : MonoBehaviour
     void Start()
     {
         myAgent = GetComponent<NavMeshAgent>();
+     
     }
 
     private void Update()
@@ -28,7 +34,27 @@ public class PointAndClickMove : MonoBehaviour
             if (animator != null)
             animator.SetBool("Walk", false);
         }
-   
+}
+
+    public void UpdateTargetIcon()
+    {
+        float dist = Vector3.Distance(targetIcon.transform.position, transform.position);
+        if (dist > targetRange)
+            ToggleTargetIcon(true);
+        else
+            ToggleTargetIcon(false);
+    }
+
+    public void ToggleTargetIcon(bool isOn)
+    {
+        if (isOn)
+        {
+            targetIcon.GetComponent<MeshRenderer>().enabled = true; 
+        }
+        else
+        {
+            targetIcon.GetComponent<MeshRenderer>().enabled = false;
+        }
     }
 
     public void UpdateTarget(Vector3 target)
@@ -38,5 +64,9 @@ public class PointAndClickMove : MonoBehaviour
         {
             animator.SetBool("Walk", true);
         }
+
+        // targeticon
+        targetIcon.transform.position = target;
+        targetIcon.transform.Translate(Vector3.up * targetOffset);
     }
 }

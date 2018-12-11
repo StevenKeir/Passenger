@@ -7,10 +7,10 @@ using Fungus;
 public class SceneChange : MonoBehaviour {
 
     public bool talkedToCharactersSceneOne;
-
     public string sceneName;
-
     public Collider doorTrigger;
+    public int introTalkInt; // for activating door trigger in the first scene
+
 
 
     private void Start()
@@ -18,10 +18,16 @@ public class SceneChange : MonoBehaviour {
 
         doorTrigger.enabled = false;
         talkedToCharactersSceneOne = false;
+        introTalkInt = 0;
+
 
     }
 
     void Update() {
+
+        if (introTalkInt >= 2) {
+            talkedToCharactersSceneOne = true;
+        }
 
         if (talkedToCharactersSceneOne == true) {
             doorTrigger.enabled = true;
