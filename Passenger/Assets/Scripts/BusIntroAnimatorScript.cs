@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class BusIntroScript : MonoBehaviour {
+public class BusIntroAnimatorScript : MonoBehaviour {
 
     public GameObject player;
     public Animator playerAnim;
