@@ -16,6 +16,7 @@ TagManager:
   - Door
   - Canvas
   - Flowchart
+  - FungusPull
   layers:
   - Default
   - TransparentFX

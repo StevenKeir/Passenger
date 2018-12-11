@@ -6,9 +6,13 @@ public class CreateStatCollection : MonoBehaviour {
     public float myOxyMult;
     public float busOxyMult;
     public GameObject myStatHandler;
+    public GameObject myFungusPuller;
     GameObject mySHobj;
     StatsHandler mySH;
     private void Start() {
+        if (GameObject.FindGameObjectWithTag("FungusPull") == null) {
+            Instantiate(myFungusPuller, transform.position, Quaternion.identity);
+        }
         if (GameObject.FindGameObjectWithTag("StatHandler") == null) {
             mySHobj = Instantiate(myStatHandler, transform.position, Quaternion.identity);
             mySH = mySHobj.GetComponent<StatsHandler>();

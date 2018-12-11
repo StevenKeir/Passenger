@@ -9,51 +9,50 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1082713093534276}
+  m_RootGameObject: {fileID: 1548407424319600}
   m_IsPrefabAsset: 1
---- !u!1 &1082713093534276
+--- !u!1 &1548407424319600
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4118355807696050}
-  - component: {fileID: 114212529547609882}
+  - component: {fileID: 4744349793731170}
+  - component: {fileID: 114549075398556924}
   m_Layer: 0
-  m_Name: GameStatInstantiator
-  m_TagString: Untagged
+  m_Name: FungusPull
+  m_TagString: FungusPull
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4118355807696050
+--- !u!4 &4744349793731170
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082713093534276}
-  m_LocalRotation: {x: 0.012236478, y: -0.012102865, z: 0.0029089819, w: 0.9998477}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1548407424319600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.2384346, y: 3.1807923, z: 2.0614169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.406, y: -1.383, z: 0.316}
---- !u!114 &114212529547609882
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114549075398556924
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082713093534276}
+  m_GameObject: {fileID: 1548407424319600}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c56d936f33a37c4ab3783c41505d50c, type: 3}
+  m_Script: {fileID: 11500000, guid: 94db6cf48bb704342bdc5532aecb983f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myOxyMult: 99
-  busOxyMult: 99
-  myStatHandler: {fileID: 1470220393625790, guid: 9f3576f19bc5df943a573b8d26614b09,
-    type: 2}
-  myFungusPuller: {fileID: 1548407424319600, guid: c1b31f444ddb6564c8eeed05d7a0067c,
-    type: 2}
+  myFlowcharts: []
+  boolName: []
+  intName: []
+  myBool: 
+  myInt: 
