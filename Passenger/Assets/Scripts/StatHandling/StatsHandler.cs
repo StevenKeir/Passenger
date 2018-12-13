@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class StatsHandler : MonoBehaviour
 {
     //use this bool to detect if values have been saved

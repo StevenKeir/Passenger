@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43996504, g: 0.4884447, b: 0.56864333, a: 1}
+  m_IndirectSpecularColor: {r: 0.43996486, g: 0.48844427, b: 0.5686426, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,152 +213,152 @@ Prefab:
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224555107846305842, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224062954515984030, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224721635244841250, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224489501450029062, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224784529688317458, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114935792058796950, guid: 1f2b9863a8207c74d9824de035e8931b,
         type: 2}
@@ -558,11 +558,11 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 47970325}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &47970327
@@ -612,7 +612,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &102241352
@@ -2313,7 +2313,7 @@ Prefab:
         type: 2}
       propertyPath: fungus.Array.data[0]
       value: 
-      objectReference: {fileID: 1859965529}
+      objectReference: {fileID: 0}
     - target: {fileID: 114691115763159644, guid: 67e82762ff949e54a90ee6b62e8bd302,
         type: 2}
       propertyPath: fungus.Array.data[1]
@@ -2428,7 +2428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1993717629}
+  selectedFlowchart: {fileID: 342851338}
 --- !u!4 &302332176
 Transform:
   m_ObjectHideFlags: 1
@@ -2847,7 +2847,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: You found my gun! Thank you. You have taken a huge weight off my shoulders.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -2988,7 +2988,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: Thanks, remember time is a factor to find that gun.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3115,7 +3115,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: "Im busy, go away\u2026."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3231,7 +3231,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 501
     y: 215
-    width: 149.33334
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3739,7 +3739,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Fair enough, just don't bother me again.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4034,7 +4034,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Thanks, remember time is a factor.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4063,7 +4063,7 @@ MonoBehaviour:
     come out of my holster during the crash. Just keep an eye out for it and keep
     it between me and you.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4090,7 +4090,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: To be honest it may become a option.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4190,7 +4190,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'We got to try and make sure all the passengers are calm. '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4218,7 +4218,7 @@ MonoBehaviour:
   storyText: "I can\u2019t deal with that now, I\u2019m having to keep everyone calm.
     We\u2019re still using up oxygen too quick. "
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4245,7 +4245,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Really? A survivor? It must been the engineer.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4297,7 +4297,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 326
     y: 174
-    width: 150
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4346,7 +4346,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "I found someone out there. But they\u2019re trapped and unconscious."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4371,9 +4371,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: Spoke to the lawyer and saw you walk out the door. Smartass.
+  storyText: I spoke to the lawyer and saw you walk out the door. Smartass.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4400,7 +4400,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: How did you go outside?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 102241352}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -4580,9 +4580,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -60, y: -13}
+  scrollPos: {x: -83, y: -74}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 400
   zoom: 1
   scrollViewRect:
@@ -4591,8 +4591,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 342851314}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 342851292}
@@ -4628,7 +4627,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &342851340
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342851281}
@@ -4643,7 +4642,7 @@ MonoBehaviour:
   variable: {fileID: 342851303}
 --- !u!114 &342851341
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 342851281}
@@ -4684,7 +4683,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &353206290
@@ -8237,7 +8236,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &504717500
@@ -11510,7 +11509,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1859965530}
+  - {fileID: 1234599647}
   - {fileID: 1222742233}
   - {fileID: 2055643366}
   - {fileID: 1993717630}
@@ -11678,7 +11677,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1120077184
@@ -11728,7 +11727,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1143439093
@@ -12329,7 +12328,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201326525}
   m_LocalRotation: {x: -0.20054288, y: 0.7758945, z: -0.30078322, w: -0.51701033}
-  m_LocalPosition: {x: 8.136736, y: 5.9516163, z: 4.1224117}
+  m_LocalPosition: {x: 5.49, y: 4.9, z: 3.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12341,7 +12340,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201326525}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c3bca89ceaf0cb48b324e34a5136ac3, type: 3}
   m_Name: 
@@ -14638,6 +14637,42 @@ Transform:
   m_Father: {fileID: 1112408720}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1234599646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1234599647}
+  m_Layer: 0
+  m_Name: Actors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1234599647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1234599646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 47970326}
+  - {fileID: 1143439092}
+  - {fileID: 504717499}
+  - {fileID: 1734435143}
+  - {fileID: 102241351}
+  - {fileID: 1120077183}
+  - {fileID: 353206289}
+  - {fileID: 1777405247}
+  m_Father: {fileID: 1112408720}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1294386997 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114947782266434002, guid: 003dc72f5722ec04eb66b1735d6765b4,
@@ -14744,7 +14779,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 512.22687
     y: 133.07214
-    width: 126.28866
+    width: 121.58594
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14838,7 +14873,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -15028,7 +15063,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: "You should start making your peace\u2026"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -15140,7 +15175,7 @@ MonoBehaviour:
   storyText: Have you found the mineral in the caves yet? If you bring it to me I'm
     sure my drug will help the engineer.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -15261,7 +15296,7 @@ MonoBehaviour:
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 9
-  blockName: Scarcasum
+  blockName: Sarcasm
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -15476,7 +15511,7 @@ MonoBehaviour:
   storyText: I knew we were doomed, you just reaffirmed it. At least now I can start
     making my peace.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -15528,7 +15563,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 516
     y: 310.9691
-    width: 120.10309
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15721,7 +15756,7 @@ MonoBehaviour:
   storyText: "Not so brave now, are we? Well, as far as I can see it's the only hope
     we have of surviving, so if you don\u2019t go I don\u2019t like our chances. "
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16017,7 +16052,7 @@ MonoBehaviour:
     we can get out of this. You won\u2019t have any issue recognising the crystal,
     it\u2019s a pure vein. "
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16046,7 +16081,7 @@ MonoBehaviour:
     from here. If you could go inside and break off a crystal I could make a drug
     to \u2018wake him up\u2019."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16073,7 +16108,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: No point just waiting to die.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16100,7 +16135,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Hmm, you're actually trying to help us survive?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16129,7 +16164,7 @@ MonoBehaviour:
     trapped and unconscious. If we can help him he might be able to get the oxygen
     going again. Can you think of anything?"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16156,7 +16191,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I apologize, but what can we really do?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16183,7 +16218,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: No need to be a dick.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16211,7 +16246,7 @@ MonoBehaviour:
   storyText: Well O mighty saviour, first thing you can do is start producing oxygen
     instead of methane.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16313,7 +16348,7 @@ MonoBehaviour:
     The authorities within the bio-domes will take up to a day to get out here. I\u2019m
     sure you\u2019re going save the day."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16341,7 +16376,7 @@ MonoBehaviour:
   storyText: "I've been better. Not feeling great of the fact we\u2019re all going
     to die."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16368,7 +16403,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: Hi, are you doing ok?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16543,7 +16578,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 353206290}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -16659,11 +16694,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -134.90736, y: 3.0102615}
+  scrollPos: {x: -91.32873, y: -35.256588}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 400
-  zoom: 0.97
+  zoom: 0.9079996
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -16671,9 +16706,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1345035914}
+  - {fileID: 1345035933}
   selectedCommands:
-  - {fileID: 1345035922}
+  - {fileID: 1345035936}
   variables:
   - {fileID: 1345035942}
   - {fileID: 1345035970}
@@ -25321,7 +25356,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1734435144
@@ -25992,7 +26027,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1859965530}
+  m_Father: {fileID: 1234599647}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1777405248
@@ -26117,7 +26152,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 512
     y: 211
-    width: 126.666664
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26210,7 +26245,7 @@ MonoBehaviour:
   indentLevel: 2
 --- !u!114 &1779810988
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -26244,7 +26279,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: "O yeah, so you have. Thanks my saviour\u2026"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26271,7 +26306,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: Dude I already gave it to you.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26298,7 +26333,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: Hey man, how'd you go with my cigar box?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26404,7 +26439,7 @@ MonoBehaviour:
   indentLevel: 3
 --- !u!114 &1779810995
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -26502,7 +26537,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: No problem.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26529,7 +26564,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: All good man, just keep and eye out for me, will ya?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26556,7 +26591,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: Sorry mate no luck.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26583,7 +26618,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: Hey man, how'd you go with my cigar box?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26660,7 +26695,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1779811002
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -26758,7 +26793,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: "Yeah, no problem\u2026"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26786,7 +26821,7 @@ MonoBehaviour:
   storyText: 'Man, you are my saviour. Thank the heavens for the blessing of you,
     my man. '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26813,7 +26848,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: All good dude I have it right here.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26840,7 +26875,7 @@ MonoBehaviour:
   indentLevel: 4
   storyText: Hey man, how'd you go with my cigar box?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -26981,7 +27016,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1779811010
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -27079,7 +27114,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: It's all good man, you can get it whenever.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27106,7 +27141,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: Didn't I say not to worry about it?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27133,7 +27168,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: Hey man, how'd you go with my cigar box?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27210,7 +27245,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1779811016
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -27244,7 +27279,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: Hey man, how'd you go with my cigar box?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27356,7 +27391,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 511
     y: 279
-    width: 130
+    width: 124
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27411,7 +27446,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 511
     y: 342
-    width: 128.66666
+    width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27580,7 +27615,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Huh, your probably right.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27889,7 +27924,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Cheers man.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27917,7 +27952,7 @@ MonoBehaviour:
   storyText: If you want to help me out you can always find my cigar box for me. I
     lost it.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27944,7 +27979,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Hmm...
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27971,7 +28006,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "We\u2019re running out of air, hey? That's a drag."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -27999,7 +28034,7 @@ MonoBehaviour:
   storyText: "That\u2019s good, I\u2019m trying to help the officer keep everyone
     calm to conserve air. But you seem ok."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28026,7 +28061,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: What. Nah man this is how I always am.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28078,7 +28113,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "I\u2019m fine man. How are you?"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28105,7 +28140,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Hi, are you doing ok?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28310,7 +28345,7 @@ MonoBehaviour:
     vector3Val: {x: 0, y: 0, z: 0}
 --- !u!114 &1779811047
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1779810983}
@@ -28344,7 +28379,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1120077184}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -28541,7 +28576,7 @@ MonoBehaviour:
   version: 1
   scrollPos: {x: -189, y: -121}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 403
   zoom: 1
   scrollViewRect:
@@ -28552,8 +28587,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1779810984}
-  selectedCommands:
-  - {fileID: 1779810988}
+  selectedCommands: []
   variables:
   - {fileID: 1779811052}
   - {fileID: 1779811034}
@@ -28669,397 +28703,6 @@ MonoBehaviour:
   sceneName: Outside
   doorTrigger: {fileID: 1856929942}
   introTalkInt: 0
---- !u!1 &1859965529
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 1420881403148958, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1859965530}
-  - component: {fileID: 1859965537}
-  - component: {fileID: 1859965536}
-  - component: {fileID: 1859965535}
-  - component: {fileID: 1859965534}
-  - component: {fileID: 1859965533}
-  - component: {fileID: 1859965532}
-  - component: {fileID: 1859965544}
-  - component: {fileID: 1859965543}
-  - component: {fileID: 1859965542}
-  - component: {fileID: 1859965541}
-  - component: {fileID: 1859965540}
-  - component: {fileID: 1859965539}
-  - component: {fileID: 1859965538}
-  - component: {fileID: 1859965531}
-  - component: {fileID: 1859965545}
-  - component: {fileID: 1859965546}
-  m_Layer: 0
-  m_Name: Intro
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1859965530
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4168962249846870, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 47970326}
-  - {fileID: 1143439092}
-  - {fileID: 504717499}
-  - {fileID: 1734435143}
-  - {fileID: 102241351}
-  - {fileID: 1120077183}
-  - {fileID: 353206289}
-  - {fileID: 1777405247}
-  m_Father: {fileID: 1112408720}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1859965531
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 10
-  indentLevel: 0
-  targetFlowchart: {fileID: 0}
-  targetBlock: {fileID: 1859965544}
-  startLabel:
-    stringRef: {fileID: 0}
-    stringVal: 
-  startIndex: 0
-  callMode: 0
---- !u!114 &1859965532
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 207aecf668a0345388087ccf522f9957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 11
-  indentLevel: 0
-  duration: 7
-  targetAlpha: 0
-  waitUntilFinished: 1
-  fadeColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeTexture: {fileID: 0}
---- !u!114 &1859965533
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 114160274794487560, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Lawyer
-  value: 0
---- !u!114 &1859965534
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 114708187270780334, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 0
-  key: Officer
-  value: 0
---- !u!114 &1859965535
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 114565140831125408, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 1859965536}
-  waitForFrames: 1
---- !u!114 &1859965536
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 114188967560652972, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 250.62027
-    y: -0.43038177
-    width: 136
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 0
-  blockName: IntroVoiceOver
-  description: 
-  eventHandler: {fileID: 1859965535}
-  commandList:
-  - {fileID: 1859965546}
-  - {fileID: 1859965545}
-  - {fileID: 1859965532}
-  - {fileID: 1859965531}
---- !u!114 &1859965537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114338922866725744, guid: 003dc72f5722ec04eb66b1735d6765b4,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  scrollPos: {x: 233.40556, y: 60.07499}
-  variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 1
-  scrollViewRect:
-    serializedVersion: 2
-    x: -343
-    y: -340
-    width: 1114
-    height: 859
-  selectedBlocks:
-  - {fileID: 1859965544}
-  selectedCommands: []
-  variables:
-  - {fileID: 1859965534}
-  - {fileID: 1859965533}
-  description: 
-  stepPause: 0
-  colorCommands: 1
-  hideComponents: 1
-  saveSelection: 1
-  localizationId: 
-  showLineNumbers: 0
-  hideCommands: []
-  luaEnvironment: {fileID: 0}
-  luaBindingName: flowchart
---- !u!114 &1859965538
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 9
-  indentLevel: 0
-  _targetGameObject:
-    gameObjectRef: {fileID: 0}
-    gameObjectVal: {fileID: 1859965529}
-  activeState:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  targetGameObjectOLD: {fileID: 0}
---- !u!114 &1859965539
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
---- !u!114 &1859965540
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 7
-  indentLevel: 0
-  storyText: Looks like the train derailed, I wonder if everyone is ok?
-  description: 
-  character: {fileID: 504717500}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1859965541
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 6
-  indentLevel: 0
-  storyText: Urgh! What happened!?
-  description: 
-  character: {fileID: 504717500}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1859965542
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 5
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 2
-  durationOLD: 0
---- !u!114 &1859965543
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1902400ccc99b45d69ad01cb86b57d0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 4
-  indentLevel: 0
-  musicClip: {fileID: 8300000, guid: feed341261d6a7c40b208cc9b0821974, type: 3}
-  atTime: 0
-  loop: 1
-  fadeDuration: 2
---- !u!114 &1859965544
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 219.34006
-    y: 124.77838
-    width: 209.33333
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 1
-  blockName: PassengerWakingUp (Copy)
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 1859965543}
-  - {fileID: 1859965542}
-  - {fileID: 1859965541}
-  - {fileID: 1859965540}
-  - {fileID: 1859965539}
-  - {fileID: 1859965538}
---- !u!114 &1859965545
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 12
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 3
-  durationOLD: 0
---- !u!114 &1859965546
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1859965529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 13
-  indentLevel: 0
-  targetObject: {fileID: 586477910}
-  methodName: Scene2
-  delay: 0
 --- !u!1 &1860299590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1180790780330640, guid: 76d04a30e16078c429c54884b51734c2,
@@ -29580,7 +29223,7 @@ MonoBehaviour:
   indentLevel: 2
   storyText: Remember, the traveler is not to have that cigar box.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -29893,7 +29536,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: "Great work. I\u2019m feeling better already."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -29921,7 +29564,7 @@ MonoBehaviour:
   storyText: Definitely, Even if I find it, I will make sure he doesn't get hold of
     it. We don't need him freaking out right now.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -29948,7 +29591,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: Well if you find it I strongly suggest not giving it to him.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -29975,7 +29618,7 @@ MonoBehaviour:
   indentLevel: 1
   storyText: He's been asking for a cigar box. I wondered what's in it.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30004,7 +29647,7 @@ MonoBehaviour:
     Logging into server \u2026 Ok I\u2019m in. The photo\u2026. It\u2019s the traveller!
     The profile says its due to the drug he had been taking."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30158,7 +29801,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: "I hope someone comes to help us soon\u2026"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30270,7 +29913,7 @@ MonoBehaviour:
   storyText: That information will be helpful, keep an eye out in the debris at the
     back of the train.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30633,7 +30276,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: You might be right. I feel a bit calmer. Thanks.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -30863,7 +30506,7 @@ MonoBehaviour:
   storyText: It's not the end of the world but is probably a good idea. We don't know
     what this suspect is capable of.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31157,7 +30800,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Thanks, a bit of information helps all of us.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31187,7 +30830,7 @@ MonoBehaviour:
     the officer the information to make sure that they don't get out of hand. Will
     you help?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31214,7 +30857,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "So, where\u2019s the case file?"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31242,7 +30885,7 @@ MonoBehaviour:
   storyText: "I haven\u2019t read the case file yet, I was just told to get on the
     train as an eyewitness said they were headed to the station. "
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31269,7 +30912,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Uh, ok. Do you have any more information on that?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31297,7 +30940,7 @@ MonoBehaviour:
   storyText: "Maybe just keep an eye out. I was assigned a case to catch a suspect
     in a beating. It\u2019s possible the suspect is on board."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31325,7 +30968,7 @@ MonoBehaviour:
   storyText: I'm trying to help the officer calm everyone down, we need to conserve
     oxygen. Is there anything you need?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31515,7 +31158,7 @@ MonoBehaviour:
   storyText: Maybe you should ask the other passengers around and see if there is
     someone who can help.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31654,7 +31297,7 @@ MonoBehaviour:
   - {fileID: 1993717595}
 --- !u!114 &1993717593
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993717530}
@@ -31728,7 +31371,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1993717597
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993717530}
@@ -31743,7 +31386,7 @@ MonoBehaviour:
   variable: {fileID: 1993717598}
 --- !u!114 &1993717598
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993717530}
@@ -31757,7 +31400,7 @@ MonoBehaviour:
   value: 0
 --- !u!114 &1993717599
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1993717530}
@@ -31787,7 +31430,7 @@ MonoBehaviour:
   storyText: What are you doing back in here then? You need to find and fix that crack!
     Maybe look at the other carriage?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31812,9 +31455,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 102
   indentLevel: 4
-  storyText: "I couldn\u2019t find it?"
+  storyText: "I couldn\u2019t find it."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31918,7 +31561,7 @@ MonoBehaviour:
   storyText: "What are you doing back in here then? You need to fix that crack.\r\nThere
     may be something you can use to fix the crack in the wreckage of other carriage.\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -31945,7 +31588,7 @@ MonoBehaviour:
   indentLevel: 5
   storyText: "I\u2019ve found it but I couldn\u2019t stop it."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32154,7 +31797,7 @@ MonoBehaviour:
   storyText: Maybe you should ask the other passengers around and see if there is
     someone who can help.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32181,7 +31824,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "They\u2019re trapped under the debris. I couldn\u2019t move them."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32208,7 +31851,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: What?! Really?!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32235,7 +31878,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: There is someone out there passed out!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32262,7 +31905,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Good, at least that should slow it down a bit.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32289,7 +31932,7 @@ MonoBehaviour:
   indentLevel: 5
   storyText: I found it. I found some tape and patched it up for now.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 504717500}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32444,7 +32087,7 @@ MonoBehaviour:
   indentLevel: 3
   storyText: How did you go? Did you stop the oxygen leak?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1734435144}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -32673,9 +32316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 232, y: 78}
+  scrollPos: {x: -156, y: -101}
   variablesScrollPos: {x: 0, y: 0}
-  variablesExpanded: 1
+  variablesExpanded: 0
   blockViewHeight: 400
   zoom: 1
   scrollViewRect:
@@ -32685,9 +32328,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1993717531}
-  selectedCommands:
-  - {fileID: 1993717623}
+  - {fileID: 1993717607}
+  selectedCommands: []
   variables:
   - {fileID: 1993717536}
   - {fileID: 1993717547}

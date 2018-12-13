@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     public bool hasDuctape;
     public bool patchedHole;
     public bool foundEngineer;
+     
 
     // Use this for initialization
     void Start () {
