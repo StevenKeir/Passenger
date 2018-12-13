@@ -7,12 +7,14 @@ public class StatsHandler : MonoBehaviour
     //use this bool to detect if values have been saved
     bool hasSaved;
     bool isStarting;
+    public bool patchedHole = false;
     public float myBusMinutesMult;
     public float myMinutesMult;
     [HideInInspector]
     public bool hasOxygen;
     [HideInInspector]
     public float timeMultiplier;
+
 
     void Awake()
     {//this runs at the start of each scene ( I think )
