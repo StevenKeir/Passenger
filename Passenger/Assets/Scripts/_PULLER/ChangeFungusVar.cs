@@ -10,6 +10,11 @@ public class ChangeFungusVar : MonoBehaviour {
     public bool pulledBool;
     FungusPushPull myFungusPull;
     [Space(5)]
+    public bool disableColliderOnFalse;
+    public bool disableColliderOnTrue;
+    public bool disableColliderOn0;
+    public bool disableColliderOnBigger;
+    [Space(5)]
     public bool pullInt;
     public bool pullBool;
     [Space(15)]
@@ -22,10 +27,14 @@ public class ChangeFungusVar : MonoBehaviour {
     [Space(5f)]
     public int varInt;
     public bool varBool;
+    Collider myCol;
 
     List<GameObject> myFlowcharts = new List<GameObject>();
 
     private void Start() {
+        if (GetComponent<Collider>()) {
+            myCol = GetComponent<Collider>();
+        }
         myFungusPull = GameObject.FindGameObjectWithTag("FungusPull").GetComponent<FungusPushPull>();
         GameObject[] myFlowchartObj = GameObject.FindGameObjectsWithTag("Flowchart");
         for (int i = 0; i < myFlowchartObj.Length; i++) {
@@ -39,6 +48,19 @@ public class ChangeFungusVar : MonoBehaviour {
         }
         if (pullInt) {
             pulledInt = myFungusPull.PullInt(varNameToPull, pulledInt);
+        }
+        ColliderChange();
+    }
+    
+    void ColliderChange() {
+        if ((disableColliderOnFalse && !pulledBool) ||
+            (disableColliderOnTrue && pulledBool) ||
+            (disableColliderOn0 && pulledInt == 0)||
+            (disableColliderOnBigger && pulledInt > 0)) {
+            myCol.enabled = false;
+        }
+        else {
+            myCol.enabled = true;
         }
     }
 
