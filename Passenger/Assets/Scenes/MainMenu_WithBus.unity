@@ -417,42 +417,42 @@ Prefab:
     - target: {fileID: 114358090970795220, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114358090970795220, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114170127035081652, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114170127035081652, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114050265152421478, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114050265152421478, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114365156744180242, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114365156744180242, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114972908228536784, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
@@ -467,12 +467,12 @@ Prefab:
     - target: {fileID: 114054001542622912, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114054001542622912, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114073704448623048, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
@@ -551,12 +551,92 @@ Prefab:
     - target: {fileID: 114934045156820952, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114934045156820952, guid: 989f1928e44126f43b943368931374a2,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: BusIntro
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170127035081652, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 114170127035081652, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 114170127035081652, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114050265152421478, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 114050265152421478, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 114050265152421478, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114365156744180242, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 114365156744180242, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 114365156744180242, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114054001542622912, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 114054001542622912, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 114054001542622912, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114358090970795220, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 114358090970795220, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 114358090970795220, guid: 989f1928e44126f43b943368931374a2,
+        type: 2}
+      propertyPath: m_firstOverflowCharacterIndex
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989f1928e44126f43b943368931374a2, type: 2}
@@ -2190,6 +2270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb0598d2f3285c418bde29f018ae07d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDuctape: 0
+  patchedHole: 0
+  foundEngineer: 0
 --- !u!1 &1113214552 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3fd7e8e7acd6c0d46b1c2498d7aa44ae,
