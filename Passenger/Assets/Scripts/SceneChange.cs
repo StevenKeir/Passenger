@@ -8,7 +8,7 @@ public class SceneChange : MonoBehaviour {
 
     public bool talkedToCharactersSceneOne;
     public string sceneName;
-    public Collider doorTrigger;
+    //public Collider doorTrigger;
     public Collider caveTrigger;
     public int introTalkInt; // for activating door trigger in the first scene
 
@@ -17,7 +17,7 @@ public class SceneChange : MonoBehaviour {
     private void Start()
     {
 
-        doorTrigger.enabled = false;
+        //doorTrigger.enabled = false;
         talkedToCharactersSceneOne = false;
         introTalkInt = 0;
 
@@ -31,7 +31,7 @@ public class SceneChange : MonoBehaviour {
         }
 
         if (talkedToCharactersSceneOne == true) {
-            doorTrigger.enabled = true;
+            //doorTrigger.enabled = true;
         }
 
 

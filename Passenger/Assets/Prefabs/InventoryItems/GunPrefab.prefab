@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 64036050473013238}
   - component: {fileID: 114979920906502750}
   - component: {fileID: 65846821330870162}
-  - component: {fileID: 114284309375158312}
   - component: {fileID: 114833264908860916}
   m_Layer: 0
   m_Name: GunPrefab
@@ -115,20 +114,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034920402, y: 0.11730384, z: 0.14241293}
   m_Center: {x: -8.843941e-11, y: 0, z: -0.004128743}
---- !u!114 &114284309375158312
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1551415646652756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbaffd33d19ce0e4ba0298c82292f1a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myFlow: {fileID: 0}
-  myItem: Gun
-  myItemCollider: {fileID: 1551415646652756}
 --- !u!114 &114833264908860916
 MonoBehaviour:
   m_ObjectHideFlags: 1

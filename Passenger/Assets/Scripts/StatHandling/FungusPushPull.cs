@@ -49,6 +49,8 @@ public class FungusPushPull : MonoBehaviour {
     //Below is everything to do with pulling info from Fungus. feel free to read and try to follow the spaghetti code.
     Scene myScene;
     Scene oldScene;
+    FungusArray myFA;
+    bool initialiseLists = false;
     private void Awake() {
         DontDestroyOnLoad(gameObject);
     }
@@ -63,7 +65,10 @@ public class FungusPushPull : MonoBehaviour {
     public List<int> myInt = new List<int>();
 
     void CustomStart() {
-        myObjArray = GameObject.FindGameObjectsWithTag("Flowchart");
+        if (GameObject.FindGameObjectWithTag("FungusSucks") != null) {
+            myFA = GameObject.FindGameObjectWithTag("FungusSucks").GetComponent<FungusArray>();
+        }
+        myObjArray = myFA.flowCharts;
     }
 
     private void Update() {
@@ -77,6 +82,7 @@ public class FungusPushPull : MonoBehaviour {
     }
 
     void LoadFromFungus() {
+        if (!initialiseLists) {
         for (int i = 0; i < myObjArray.Length; i++) {
             if (!myFlowcharts.Contains(myObjArray[i].GetComponent<Flowchart>())){
                 myFlowcharts.Add(myObjArray[i].GetComponent<Flowchart>());
@@ -89,19 +95,15 @@ public class FungusPushPull : MonoBehaviour {
                 //If it returns false, turn the value true
                 //if the value is now true, it exists, set it back to false, set it's name and value in other lists.
                 if (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]) == true) {
-                    if (!boolName.Contains(myFlowcharts[i].GetVariableNames()[f])) {
                         boolName.Add(myFlowcharts[i].GetVariableNames()[f]);
-                    }
-                    myBool.Add(myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
+                        myBool.Add(myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
                 }
                 else {
                     myFlowcharts[i].SetBooleanVariable(myFlowcharts[i].GetVariableNames()[f], true);
                     if (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]) == true) {
                         myFlowcharts[i].SetBooleanVariable(myFlowcharts[i].GetVariableNames()[f], false);
-                        if (!boolName.Contains(myFlowcharts[i].GetVariableNames()[f])) {
                             boolName.Add(myFlowcharts[i].GetVariableNames()[f]);
-                        }
-                        myBool.Add(myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
+                            myBool.Add(myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
                     }
                 }
 
@@ -110,24 +112,54 @@ public class FungusPushPull : MonoBehaviour {
                 //The same as above, except instead of setting it to false, adds one to the value.
 
                 if (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) != 0) {
-                    if (!intName.Contains(myFlowcharts[i].GetVariableNames()[f])) {
                         intName.Add(myFlowcharts[i].GetVariableNames()[f]);
+                        myInt.Add(myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
+                }
+                else {
+                    myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) + 1);
+                        if (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) != 0) {
+                            myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) - 1);
+                            intName.Add(myFlowcharts[i].GetVariableNames()[f]);
+                            myInt.Add(myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
+                        }
                     }
-                    myInt.Add(myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
+                }
+            }
+            initialiseLists = true;
+        }
+
+        for (int i = 0; i < myObjArray.Length; i++) {
+            if (!myFlowcharts.Contains(myObjArray[i].GetComponent<Flowchart>())) {
+                myFlowcharts.Add(myObjArray[i].GetComponent<Flowchart>());
+            }
+            for (int f = 0; f < myFlowcharts[i].GetVariableNames().Length; f++) {
+
+                if (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]) == true) {
+
+                    myBool[i] = (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
+                }
+                else {
+                    myFlowcharts[i].SetBooleanVariable(myFlowcharts[i].GetVariableNames()[f], true);
+                    if (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]) == true) {
+                        myFlowcharts[i].SetBooleanVariable(myFlowcharts[i].GetVariableNames()[f], false);
+
+                        myBool[i] = (myFlowcharts[i].GetBooleanVariable(myFlowcharts[i].GetVariableNames()[f]));
+                    }
+                }
+
+                if (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) != 0) {
+
+                    myInt[i] = (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
                 }
                 else {
                     myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) + 1);
                     if (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) != 0) {
-                        if (!intName.Contains(myFlowcharts[i].GetVariableNames()[f])) {
-                            intName.Add(myFlowcharts[i].GetVariableNames()[f]);
-                        }
-                        myInt.Add(myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
                         myFlowcharts[i].SetIntegerVariable(myFlowcharts[i].GetVariableNames()[f], myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]) - 1);
+
+                        myInt[i] = (myFlowcharts[i].GetIntegerVariable(myFlowcharts[i].GetVariableNames()[f]));
                     }
                 }
             }
         }
     }
-
-
 }
