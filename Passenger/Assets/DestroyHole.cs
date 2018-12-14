@@ -106,4 +106,3 @@ public class DestroyHole : MonoBehaviour {
         }
     }
 }
-}
