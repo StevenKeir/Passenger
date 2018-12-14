@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4955399460546042}
   - component: {fileID: 114512322605716834}
+  - component: {fileID: 114171617053375524}
   m_Layer: 0
   m_Name: StatsLoader
   m_TagString: StatHandler
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114171617053375524
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470220393625790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7386d27990ac2d14d9f8d3e6b6660841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  calmLevel: 0
 --- !u!114 &114512322605716834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,3 +64,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7f0ade495ec124db6a7618bd234264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myBusMinutesMult: 0
+  myMinutesMult: 0
+  hasOxygen: 0
+  timeMultiplier: 0
+  busOxygen: 0
+  origBusOxygen: 0
+  maxOxygen: 0
+  oxygen: 0
+  calmLevel: 0
+  wearingOxygenKit: 0
+  outside: 0
+  hasGun: 0
+  hasDuctape: 0
+  hasLaptop: 0
+  hasCigarBox: 0
+  hasCrystal: 0
