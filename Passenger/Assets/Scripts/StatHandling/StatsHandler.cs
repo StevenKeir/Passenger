@@ -162,8 +162,12 @@ public class StatsHandler : MonoBehaviour {
     private void Update() {
         SceneCheck();
         OxygenDrain();
-        if (Input.GetKeyDown(KeyCode.O)) {
-            outside = !outside;
+        if ((SceneManager.GetActiveScene().name == "Cave")||
+            (SceneManager.GetActiveScene().name == "Outside")){
+            outside = true;
+        }
+        else {
+            outside = false;
         }
     }
 
