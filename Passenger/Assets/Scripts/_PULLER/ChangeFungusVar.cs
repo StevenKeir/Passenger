@@ -5,26 +5,55 @@ using Fungus;
 
 public class ChangeFungusVar : MonoBehaviour {
 
+    //Name of the variable to pull from fungus as a string. case sensitive.
     public string varNameToPull;
+    //empty int value to pull. should be 0.
     public int pulledInt;
+    //empty bool value to pull. should be false.
     public bool pulledBool;
+    //reference to the Fungus puller script.
     FungusPushPull myFungusPull;
     [Space(5)]
+
+    //Disables the collider if the pulled bool is false and this is true;
     public bool disableColliderOnFalse;
+
+    //Disables the collider if the pulled bool is true and this is true;
     public bool disableColliderOnTrue;
+
+    //Disables the collider if the pulled int is 0 and this is true;
     public bool disableColliderOn0;
+
+    //Disables the collider if the pulled int is !=0 and this is true;
     public bool disableColliderOnBigger;
     [Space(5)]
+
+    //whether or not to pull the int variable in fungus named varNameToPull
     public bool pullInt;
+
+    //whether or not to pull the bool variable in fungus named varNameToPull
     public bool pullBool;
     [Space(15)]
+
+
+
+    //the name of the Flowchart that holds the bool or int to push
     public string myFlowchartName;
+    //the name of the variable to push
     public string myVarName;
     [Space(15f)]
-    [Header("Whether to use Bool or Int. only check one")]
+
+
+
+
+    [Header("Whether to use Bool or Int or both")]
+    //push bool to fungus
     public bool pushBool;
+
+    //push int to fungus
     public bool pushInt;
     [Space(5f)]
+
     public int varInt;
     public bool varBool;
     Collider myCol;
