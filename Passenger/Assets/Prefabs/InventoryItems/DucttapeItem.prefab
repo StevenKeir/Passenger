@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114984396389475864}
   - component: {fileID: 114249439080346188}
   - component: {fileID: 65187910764434522}
+  - component: {fileID: 114005003443390356}
   m_Layer: 12
   m_Name: DucttapeItem
   m_TagString: Untagged
@@ -111,8 +112,35 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.04, z: 0.03}
+  m_Size: {x: 0.04, y: 0.03, z: 0.03}
   m_Center: {x: 0.00049574114, y: 0.000000059604645, z: 1.477779e-11}
+--- !u!114 &114005003443390356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736845965936712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f885e3192962c2745b2dee6672854c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needsPull: 0
+  varNameToPull: 
+  disableColliderOnFalse: 1
+  disableColliderOnTrue: 0
+  disableColliderOn0: 0
+  disableColliderOnBigger: 0
+  pullInt: 0
+  pullBool: 1
+  myFlowchartName: Lawyer
+  myVarName: GotTape
+  pushBool: 1
+  pushInt: 0
+  varInt: 0
+  varBool: 1
+  pulledInt: 0
+  pulledBool: 0
 --- !u!114 &114249439080346188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -144,6 +172,6 @@ MonoBehaviour:
   invScript: {fileID: 0}
   Oxygenkit: {fileID: 0}
   paused: {fileID: 0}
-  defaultCursor: {fileID: 0}
-  grabCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
+  player: {fileID: 0}
+  distance: 0

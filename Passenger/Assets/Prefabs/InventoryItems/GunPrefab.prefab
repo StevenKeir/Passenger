@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 64036050473013238}
   - component: {fileID: 114979920906502750}
   - component: {fileID: 65846821330870162}
+  - component: {fileID: 114284309375158312}
+  - component: {fileID: 114833264908860916}
   m_Layer: 0
   m_Name: GunPrefab
   m_TagString: Untagged
@@ -37,9 +39,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1551415646652756}
-  m_LocalRotation: {x: -0.58056355, y: 0.58006805, z: 0.40937927, w: -0.39859208}
-  m_LocalPosition: {x: -6.808873, y: -0.77, z: -4.6091886}
-  m_LocalScale: {x: 50.28649, y: 50.286495, z: 50.286484}
+  m_LocalRotation: {x: -0.4651279, y: 0.46723992, z: 0.53693706, w: -0.52634734}
+  m_LocalPosition: {x: 1.02653, y: 0.83733, z: 0.81769}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -113,6 +115,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.034920402, y: 0.11730384, z: 0.14241293}
   m_Center: {x: -8.843941e-11, y: 0, z: -0.004128743}
+--- !u!114 &114284309375158312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551415646652756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaffd33d19ce0e4ba0298c82292f1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myFlow: {fileID: 0}
+  myItem: Gun
+  myItemCollider: {fileID: 1551415646652756}
+--- !u!114 &114833264908860916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551415646652756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f885e3192962c2745b2dee6672854c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  needsPull: 1
+  varNameToPull: HelpCalm
+  disableColliderOnFalse: 1
+  disableColliderOnTrue: 0
+  disableColliderOn0: 0
+  disableColliderOnBigger: 0
+  pullInt: 0
+  pullBool: 1
+  myFlowchartName: Officer
+  myVarName: Gun
+  pushBool: 1
+  pushInt: 0
+  varInt: 0
+  varBool: 1
+  pulledInt: 0
+  pulledBool: 0
 --- !u!114 &114979920906502750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +173,6 @@ MonoBehaviour:
   invScript: {fileID: 0}
   Oxygenkit: {fileID: 0}
   paused: {fileID: 0}
-  defaultCursor: {fileID: 0}
-  grabCursor: {fileID: 2800000, guid: 92733dd54ffb95047a17627b6e71224e, type: 3}
   cursorHotspot: {x: 0, y: 0}
+  player: {fileID: 0}
+  distance: 0
