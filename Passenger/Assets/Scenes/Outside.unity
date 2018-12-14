@@ -5861,6 +5861,8 @@ GameObject:
   - component: {fileID: 2098835300}
   - component: {fileID: 2098835305}
   - component: {fileID: 2098835304}
+  - component: {fileID: 2098835307}
+  - component: {fileID: 2098835306}
   m_Layer: 0
   m_Name: Hole
   m_TagString: Untagged
@@ -10525,6 +10527,29 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &2098835306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098835299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbac1013c846d4442aaded8abbc5ced5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &2098835307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2098835299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4422708, y: 1.666516, z: 1.7842016}
+  m_Center: {x: -0.03971171, y: 0.16474624, z: -0.3921006}
 --- !u!1001 &2112826716
 Prefab:
   m_ObjectHideFlags: 0
